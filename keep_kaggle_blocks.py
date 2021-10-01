@@ -2,8 +2,13 @@ import csv
 import json
 import os
 import ssl
+import sys
 import urllib.request
 
+TOKEN = sys.argv[1] if len(sys.argv) > 1 else None
+HBM_LINK = 'https://hubmap-link-api.herokuapp.com/hubmap-datasets?format=jsonld'
+if TOKEN:
+    HBM_LINK += '&token=' + TOKEN
 
 def make_ssl_work():
     if (not os.environ.get('PYTHONHTTPSVERIFY', '') and
@@ -20,13 +25,13 @@ with open('kaggle_hubmap_ids.csv') as csv_file:
 # get uuids for all hubmap hubmap_ids
 iris = set()
 for item in hubmap_ids:
-    with urllib.request.urlopen("https://entity.api.hubmapconsortium.org/entities/" + item) as url:
+    with urllib.request.urlopen('https://entity.api.hubmapconsortium.org/entities/' + item) as url:
         response = json.loads(url.read().decode())
         if response:
             iris.add('https://entity.api.hubmapconsortium.org/entities/' + response['uuid'])
 
 # go through JSON-LD and find uuids
-with urllib.request.urlopen("https://hubmap-link-api.herokuapp.com/hubmap-datasets?format=jsonld") as url:
+with urllib.request.urlopen(HBM_LINK) as url:
     data = json.loads(url.read().decode())
     original_data = data['@graph']
 
