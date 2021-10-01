@@ -75,4 +75,4 @@ Kaggle UUIDs Found: { len(found) }
 ''')
 
 # save/overwrite JSON-LD file
-open('rui_location.jsonld', 'w').write(json.dumps(data, indent=2))
+open('rui_locations.jsonld', 'w').write(json.dumps(data, indent=2))
