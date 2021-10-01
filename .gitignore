@@ -8,6 +8,7 @@ lerna-debug.log*
 
 #Google Sheets
 *.gsheet*
+desktop.ini
 
 /dict_test.py
 

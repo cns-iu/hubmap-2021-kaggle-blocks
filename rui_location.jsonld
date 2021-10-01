@@ -1,0 +1,2410 @@
+{
+  "@context": {
+    "@base": "http://purl.org/ccf/latest/ccf-entity.owl#",
+    "@vocab": "http://purl.org/ccf/latest/ccf-entity.owl#",
+    "ccf": "http://purl.org/ccf/latest/ccf.owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label",
+    "description": "rdfs:comment",
+    "link": {
+      "@id": "rdfs:seeAlso",
+      "@type": "@id"
+    },
+    "samples": {
+      "@reverse": "has_donor"
+    },
+    "sections": {
+      "@id": "has_tissue_section",
+      "@type": "@id"
+    },
+    "datasets": {
+      "@id": "has_dataset",
+      "@type": "@id"
+    },
+    "rui_location": {
+      "@id": "has_spatial_entity",
+      "@type": "@id"
+    },
+    "ontologyTerms": {
+      "@id": "has_ontology_term",
+      "@type": "@id"
+    },
+    "thumbnail": {
+      "@id": "has_thumbnail"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://entity.api.hubmapconsortium.org/entities/14fe19053a863e17b397bf4acb465c03",
+      "@type": "Donor",
+      "label": "Male, Age 56, BMI 27.7",
+      "description": "Entered 12/26/2019, Jamie Allen, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/donor/14fe19053a863e17b397bf4acb465c03",
+      "age": 56,
+      "sex": "Male",
+      "bmi": 27.7,
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/812d2c8e-557a-48b9-8780-a5c1f53008cb",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "creation_date": "2/12/2020 10:38:21 AM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Male, Age 56, BMI 27.7",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/812d2c8e-557a-48b9-8780-a5c1f53008cb_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 10:38:21 AM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": 8.889999389648438,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": 32.150001525878906,
+              "z_rotation": 30.110000610351562,
+              "z_scaling": 1,
+              "z_translation": -13.399999618530273
+            },
+            "x_dimension": 33,
+            "y_dimension": 23,
+            "z_dimension": 4
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/9d1412bb63341df32e4851693cbfe409",
+          "label": "Registered 6/10/2020, Jamie Allen, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/9d1412bb63341df32e4851693cbfe409",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/c274ac9e2a3a024415e3ce764511a5fb",
+              "@type": "Sample",
+              "label": "Registered 12/27/2019, Jamie Allen, TMC-Vanderbilt",
+              "description": "33 x 23 x 4 millimeter, 4 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/c274ac9e2a3a024415e3ce764511a5fb",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/24f208969655ba4ede761fb2be1eb400",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-neg, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/24f208969655ba4ede761fb2be1eb400",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/6af66ea5090a7ff3ff77de02d47f8f32",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-pos, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/6af66ea5090a7ff3ff77de02d47f8f32",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/8f528475e216c283851e6941841d7173",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, PAS, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/8f528475e216c283851e6941841d7173",
+                  "technology": "PAS",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0016-LK-202-89-PAS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/8d8df70aa94be7f65283d7f3cdc05553",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/8d8df70aa94be7f65283d7f3cdc05553",
+                  "technology": "AF",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0016-LK-202-89-AF_preIMS_registered_thumbnail.jpg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/60ed8e03152b51d5d9c8fc04e20fa5e3",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-neg, IMS negative",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/60ed8e03152b51d5d9c8fc04e20fa5e3",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/6e7ba37ff1f480f2bfa8c5d29df2a3c1",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-pos, IMS positive",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/6e7ba37ff1f480f2bfa8c5d29df2a3c1",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/484b359a4b9d4e370f52c4c3fef782a3",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS, PAS microscopy",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/484b359a4b9d4e370f52c4c3fef782a3",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/a11fe9d14122d4254acfefc9bf9faae4",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/a11fe9d14122d4254acfefc9bf9faae4",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            }
+          ],
+          "section_count": 1,
+          "section_size": 4,
+          "section_units": "millimeter",
+          "description": "33 x 23 x 4 millimeter, 4 millimeter, fresh_frozen_tissue, 1 Sections"
+        }
+      ]
+    },
+    {
+      "@id": "https://entity.api.hubmapconsortium.org/entities/ae36b667325281a00d66eed4c43c585f",
+      "@type": "Donor",
+      "label": "Male, Age 62, BMI 34.9",
+      "description": "Entered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/donor/ae36b667325281a00d66eed4c43c585f",
+      "age": 62,
+      "sex": "Male",
+      "bmi": 34.9,
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/89386c4b-280e-4656-86c8-9dfd6b7de99a",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "creation_date": "2/12/2020 12:50:08 PM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Male, Age 62, BMI 34.9",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/89386c4b-280e-4656-86c8-9dfd6b7de99a_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 12:50:08 PM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMRightKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": -4.209999084472656,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": 31.849998474121094,
+              "z_rotation": 234.5399932861328,
+              "z_scaling": 1,
+              "z_translation": -13.719999313354492
+            },
+            "x_dimension": 18,
+            "y_dimension": 12,
+            "z_dimension": 10
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/76a721f5c92163e02bf2811ed276ed0b",
+          "label": "Registered 6/10/2020, Jamie Allen, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/76a721f5c92163e02bf2811ed276ed0b",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/8bfe368730af3dd5448bff9712d9413b",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "18 x 12 x 2 millimeter, 2 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/8bfe368730af3dd5448bff9712d9413b",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/8b4716e6b4322ce53d316f76f9110381",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "18 x 12 x 2 millimeter, 2 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/8b4716e6b4322ce53d316f76f9110381",
+              "sample_type": "Tissue Section",
+              "section_number": 2,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/4c1ada7b32be3655b65a44c8c28beb94",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "18 x 12 x 2 millimeter, 2 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/4c1ada7b32be3655b65a44c8c28beb94",
+              "sample_type": "Tissue Section",
+              "section_number": 3,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/bebb58d5f083bf279ab76916c9148e7e",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "18 x 12 x 2 millimeter, 2 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/bebb58d5f083bf279ab76916c9148e7e",
+              "sample_type": "Tissue Section",
+              "section_number": 4,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/ed8599e365911d3bb7904d1dd1d59050",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "18 x 12 x 2 millimeter, 2 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/ed8599e365911d3bb7904d1dd1d59050",
+              "sample_type": "Tissue Section",
+              "section_number": 5,
+              "samples": [],
+              "datasets": []
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/43326f3efb14c4f5f0a0b04bf1ab37d8",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: LC-MS-untargeted, LC-MS/MS (label-free proteomics)",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/43326f3efb14c4f5f0a0b04bf1ab37d8",
+              "technology": "LC",
+              "thumbnail": "assets/icons/ico-bulk-lc.svg"
+            }
+          ],
+          "section_count": 5,
+          "section_size": 2,
+          "section_units": "millimeter",
+          "description": "18 x 12 x 10 millimeter, 2 millimeter, fresh_frozen_tissue, 5 Sections"
+        },
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/89386c4b-280e-4656-86c8-9dfd6b7de99a",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "creation_date": "2/12/2020 12:50:08 PM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Male, Age 62, BMI 34.9",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/89386c4b-280e-4656-86c8-9dfd6b7de99a_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 12:50:08 PM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMRightKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": -4.209999084472656,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": 31.849998474121094,
+              "z_rotation": 234.5399932861328,
+              "z_scaling": 1,
+              "z_translation": -13.719999313354492
+            },
+            "x_dimension": 18,
+            "y_dimension": 12,
+            "z_dimension": 10
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/4238035279fa6b84092f5a48e230a300",
+          "label": "Registered 6/10/2020, Jamie Allen, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/4238035279fa6b84092f5a48e230a300",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/b59e362df0ecc7702aa744ade8a8dd1a",
+              "@type": "Sample",
+              "label": "Registered 11/10/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "18 x 12 x 10 millimeter, 10 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/b59e362df0ecc7702aa744ade8a8dd1a",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/e7823c367fbfb87476f8ed3290949e1c",
+                  "@type": "Dataset",
+                  "label": "Registered 5/20/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/e7823c367fbfb87476f8ed3290949e1c",
+                  "technology": "OTHER",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/9472427491eb889f5884175a8a0d59bf",
+              "@type": "Dataset",
+              "label": "Registered 5/20/2021, Nathan Patterson, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS, PAS microscopy",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/9472427491eb889f5884175a8a0d59bf",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ],
+          "section_count": 1,
+          "section_size": 10,
+          "section_units": "millimeter",
+          "description": "18 x 12 x 10 millimeter, 10 millimeter, fresh_frozen_tissue, 1 Sections"
+        }
+      ]
+    },
+    {
+      "@id": "https://entity.api.hubmapconsortium.org/entities/2510644405f4e7fd86d31af0001b840f",
+      "@type": "Donor",
+      "label": "Male, Age 56, BMI 32.5",
+      "description": "Entered 12/26/2019, Jamie Allen, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/donor/2510644405f4e7fd86d31af0001b840f",
+      "age": 56,
+      "sex": "Male",
+      "bmi": 32.5,
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/43a81423-74d2-4803-a805-d745093c2376",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "creation_date": "2/12/2020 11:54:58 AM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Male, Age 56, BMI 32.5",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/43a81423-74d2-4803-a805-d745093c2376_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 11:54:58 AM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": 12.229999542236328,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": 27.12000274658203,
+              "z_rotation": 288.07000732421875,
+              "z_scaling": 1,
+              "z_translation": -13.450000762939453
+            },
+            "x_dimension": 35,
+            "y_dimension": 19,
+            "z_dimension": 3
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/039ce6e8d5fa342811a4b317846b7281",
+          "label": "Registered 6/10/2020, Jamie Allen, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/039ce6e8d5fa342811a4b317846b7281",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/03dd86ef9ffd739b4cad8b99eb1e3fbf",
+              "@type": "Sample",
+              "label": "Registered 12/31/2019, Jamie Allen, TMC-Vanderbilt",
+              "description": "35 x 19 x 3 millimeter, 3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/03dd86ef9ffd739b4cad8b99eb1e3fbf",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/d8d17995448d651e003abfbb0e0f7c62",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/d8d17995448d651e003abfbb0e0f7c62",
+                  "technology": "AF",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0010-LK-155-40-AF_preIMS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/0ca61e7926956da9b8bdde2b1f3c43af",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, PAS, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/0ca61e7926956da9b8bdde2b1f3c43af",
+                  "technology": "PAS",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0010-LK-155-40-PAS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/42e172492211ee700dadb8e138851a41",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-neg, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/42e172492211ee700dadb8e138851a41",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/22ee51c5d4b96b54fce03a702db6c070",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-pos, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/22ee51c5d4b96b54fce03a702db6c070",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/9ba91ddddfb2be8f06fd11230da0bbb3",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/9ba91ddddfb2be8f06fd11230da0bbb3",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/8030bee708b211203104616629480b52",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS, PAS microscopy",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/8030bee708b211203104616629480b52",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/a1e1e169777c00084b3d46325561f374",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-neg, IMS negative",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/a1e1e169777c00084b3d46325561f374",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/f1fc56fe8e39a9c05328d905d1c4498e",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-pos, IMS positive",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/f1fc56fe8e39a9c05328d905d1c4498e",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ],
+          "section_count": 1,
+          "section_size": 3,
+          "section_units": "millimeter",
+          "description": "35 x 19 x 3 millimeter, 3 millimeter, fresh_frozen_tissue, 1 Sections"
+        },
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/43a81423-74d2-4803-a805-d745093c2376",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "creation_date": "2/12/2020 11:54:58 AM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Male, Age 56, BMI 32.5",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/43a81423-74d2-4803-a805-d745093c2376_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 11:54:58 AM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": 12.229999542236328,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": 27.12000274658203,
+              "z_rotation": 288.07000732421875,
+              "z_scaling": 1,
+              "z_translation": -13.450000762939453
+            },
+            "x_dimension": 35,
+            "y_dimension": 19,
+            "z_dimension": 3
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/a6255c16876d9c9d6229414c59fff534",
+          "label": "Registered 6/10/2020, Jamie Allen, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/a6255c16876d9c9d6229414c59fff534",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/ec97ad1a5acfecbd1b3a2d13c03f888e",
+              "@type": "Sample",
+              "label": "Registered 5/14/2021, Nathan Patterson, TMC-Vanderbilt",
+              "description": "35 x 19 x 3 millimeter, 3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/ec97ad1a5acfecbd1b3a2d13c03f888e",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/9475d52f85b513caaa5359232b2cdb96",
+                  "@type": "Dataset",
+                  "label": "Registered 5/20/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/9475d52f85b513caaa5359232b2cdb96",
+                  "technology": "OTHER",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/b4c8ef4fdbc94b884e8f3251ac9143bd",
+              "@type": "Dataset",
+              "label": "Registered 5/20/2021, Nathan Patterson, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS, PAS microscopy",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/b4c8ef4fdbc94b884e8f3251ac9143bd",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ],
+          "section_count": 1,
+          "section_size": 3,
+          "section_units": "millimeter",
+          "description": "35 x 19 x 3 millimeter, 3 millimeter, fresh_frozen_tissue, 1 Sections"
+        }
+      ]
+    },
+    {
+      "@id": "https://entity.api.hubmapconsortium.org/entities/dd258063b8389612a9596af734143906",
+      "@type": "Donor",
+      "label": "Male, Age 58, BMI 22.0",
+      "description": "Entered 12/23/2019, Elizabeth Neumann, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/donor/dd258063b8389612a9596af734143906",
+      "age": 58,
+      "sex": "Male",
+      "bmi": 22,
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/a92ad611-c3c6-43d9-bfd6-00ff906fa541",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "creation_date": "2/12/2020 11:50:03 AM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Male, Age 58, BMI 22.0",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/a92ad611-c3c6-43d9-bfd6-00ff906fa541_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 11:50:03 AM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 43.4900016784668,
+              "x_scaling": 1,
+              "x_translation": 15.650001525878906,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": -32.29999923706055,
+              "z_rotation": 308.1400146484375,
+              "z_scaling": 1,
+              "z_translation": -20.229999542236328
+            },
+            "x_dimension": 18,
+            "y_dimension": 10,
+            "z_dimension": 2
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/24b13fd3342a93b5c85bd2318434b2a4",
+          "label": "Registered 6/10/2020, Elizabeth Neumann, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/24b13fd3342a93b5c85bd2318434b2a4",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/81e13b6ca7bae3a426668c7f0bf6ac7a",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "18 x 10 x 0.3 millimeter, 0.3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/81e13b6ca7bae3a426668c7f0bf6ac7a",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/34322d81cafea4eb92f316719f21e8a5",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "18 x 10 x 0.3 millimeter, 0.3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/34322d81cafea4eb92f316719f21e8a5",
+              "sample_type": "Tissue Section",
+              "section_number": 2,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/dd224173f491932735bcfea6a9ffca98",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "18 x 10 x 0.3 millimeter, 0.3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/dd224173f491932735bcfea6a9ffca98",
+              "sample_type": "Tissue Section",
+              "section_number": 3,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/adb796d8717f5a403ebd8b9690fbe26b",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "18 x 10 x 0.3 millimeter, 0.3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/adb796d8717f5a403ebd8b9690fbe26b",
+              "sample_type": "Tissue Section",
+              "section_number": 4,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/d7a8869e1687993cfc115fc2326e7b93",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "18 x 10 x 0.3 millimeter, 0.3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/d7a8869e1687993cfc115fc2326e7b93",
+              "sample_type": "Tissue Section",
+              "section_number": 5,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/d1451775c63a3abdc3327a5ea28fe30b",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "18 x 10 x 0.3 millimeter, 0.3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/d1451775c63a3abdc3327a5ea28fe30b",
+              "sample_type": "Tissue Section",
+              "section_number": 6,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/11ee922a974eb5fed7167e3c6da9b219",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "18 x 10 x 0.3 millimeter, 0.3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/11ee922a974eb5fed7167e3c6da9b219",
+              "sample_type": "Tissue Section",
+              "section_number": 7,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/2130d5f91ce61d7157a42c0497b06de8",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/2130d5f91ce61d7157a42c0497b06de8",
+                  "technology": "AF",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0006-LK-2-85-AF_preIMS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/f4188a148e4c759092d19369d310883b",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, PAS, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/f4188a148e4c759092d19369d310883b",
+                  "technology": "PAS",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0006-LK-2-85-PAS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/ca886a630b2038997a4cfbbf4abfd283",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-neg, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/ca886a630b2038997a4cfbbf4abfd283",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/be503a021ed910c0918842e318e6efa2",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-pos, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/be503a021ed910c0918842e318e6efa2",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/27fd8c958f4478ab60df2555174c6e92",
+                  "@type": "Dataset",
+                  "label": "Registered 8/22/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/27fd8c958f4478ab60df2555174c6e92",
+                  "technology": "AF",
+                  "thumbnail": "assets/icons/ico-spatial-af.svg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/9e9ccb2dd633440df0b8ec966f28edb6",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: LC-MS-untargeted, LC-MS/MS (label-free proteomics)",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/9e9ccb2dd633440df0b8ec966f28edb6",
+              "technology": "LC",
+              "thumbnail": "assets/icons/ico-bulk-lc.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/9ed95f2cf5c1b1a6af6250085d1aaf4a",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/9ed95f2cf5c1b1a6af6250085d1aaf4a",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/64fb1a207109beb61404b7e0b4c60810",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS, PAS microscopy",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/64fb1a207109beb61404b7e0b4c60810",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/2ece1b8974483e14046fad953b35fedd",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-neg, IMS negative",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/2ece1b8974483e14046fad953b35fedd",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/3ade70d66d10ed1d30fe005f672b2abf",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-pos, IMS positive",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/3ade70d66d10ed1d30fe005f672b2abf",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/bf6ec5a47c32f43b6d01ea58fa4723ca",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/bf6ec5a47c32f43b6d01ea58fa4723ca",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            }
+          ],
+          "section_count": 7,
+          "section_size": 0.3,
+          "section_units": "millimeter",
+          "description": "18 x 10 x 2 millimeter, 0.3 millimeter, fresh_frozen_tissue, 7 Sections"
+        },
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/a92ad611-c3c6-43d9-bfd6-00ff906fa541",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "creation_date": "2/12/2020 11:50:03 AM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Male, Age 58, BMI 22.0",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/a92ad611-c3c6-43d9-bfd6-00ff906fa541_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 11:50:03 AM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 43.4900016784668,
+              "x_scaling": 1,
+              "x_translation": 15.650001525878906,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": -32.29999923706055,
+              "z_rotation": 308.1400146484375,
+              "z_scaling": 1,
+              "z_translation": -20.229999542236328
+            },
+            "x_dimension": 18,
+            "y_dimension": 10,
+            "z_dimension": 2
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/5f8bd79354b14fc35466221b875bb030",
+          "label": "Registered 6/10/2020, Elizabeth Neumann, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/5f8bd79354b14fc35466221b875bb030",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/e895e4ab99e921bf8ad8e9c78e3b027b",
+              "@type": "Sample",
+              "label": "Registered 11/10/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "18 x 10 x 2 millimeter, 2 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/e895e4ab99e921bf8ad8e9c78e3b027b",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/c384f98d970bf191927a37d0b46ca3db",
+                  "@type": "Dataset",
+                  "label": "Registered 5/20/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/c384f98d970bf191927a37d0b46ca3db",
+                  "technology": "OTHER",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/d63f77a8a5b4c23a328f526517a52ff9",
+              "@type": "Dataset",
+              "label": "Registered 5/20/2021, Nathan Patterson, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS, PAS microscopy",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/d63f77a8a5b4c23a328f526517a52ff9",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ],
+          "section_count": 1,
+          "section_size": 2,
+          "section_units": "millimeter",
+          "description": "18 x 10 x 2 millimeter, 2 millimeter, fresh_frozen_tissue, 1 Sections"
+        }
+      ]
+    },
+    {
+      "@id": "https://entity.api.hubmapconsortium.org/entities/6b955ebeafe9c351831bc36aa086575f",
+      "@type": "Donor",
+      "label": "Male, Age 53, BMI 26.5",
+      "description": "Entered 12/26/2019, Jamie Allen, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/donor/6b955ebeafe9c351831bc36aa086575f",
+      "age": 53,
+      "sex": "Male",
+      "bmi": 26.5,
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/ddca4946-3dda-445a-9b7d-367780669123",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "creation_date": "2/12/2020 10:18:20 AM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Male, Age 53, BMI 26.5",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/ddca4946-3dda-445a-9b7d-367780669123_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 10:18:20 AM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": -0.26000022888183594,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": 41.30000305175781,
+              "z_rotation": 354.9800109863281,
+              "z_scaling": 1,
+              "z_translation": -13
+            },
+            "x_dimension": 20,
+            "y_dimension": 8,
+            "z_dimension": 4
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/07c995983aac113b442c0dc0c0b42ae5",
+          "label": "Registered 6/10/2020, Jamie Allen, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/07c995983aac113b442c0dc0c0b42ae5",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/6c84417088840d5fbc0c582b6c86503b",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "20 x 8 x 0.6 millimeter, 0.6 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/6c84417088840d5fbc0c582b6c86503b",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/1fea627922043eb8ad9867942b8ed127",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "20 x 8 x 0.6 millimeter, 0.6 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/1fea627922043eb8ad9867942b8ed127",
+              "sample_type": "Tissue Section",
+              "section_number": 2,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/0b8e948f6b06bc93a70668160fe5b263",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "20 x 8 x 0.6 millimeter, 0.6 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/0b8e948f6b06bc93a70668160fe5b263",
+              "sample_type": "Tissue Section",
+              "section_number": 3,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/656d66d5f2a3cda07096f861575e5264",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "20 x 8 x 0.6 millimeter, 0.6 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/656d66d5f2a3cda07096f861575e5264",
+              "sample_type": "Tissue Section",
+              "section_number": 4,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/e56e6d73b2562fda2f7109ebb842d918",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "20 x 8 x 0.6 millimeter, 0.6 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/e56e6d73b2562fda2f7109ebb842d918",
+              "sample_type": "Tissue Section",
+              "section_number": 5,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/ba437e44232bbaf756003d8cd365910c",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "20 x 8 x 0.6 millimeter, 0.6 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/ba437e44232bbaf756003d8cd365910c",
+              "sample_type": "Tissue Section",
+              "section_number": 6,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/b8996f2d06e3434ae3d476fd25841c51",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "20 x 8 x 0.6 millimeter, 0.6 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/b8996f2d06e3434ae3d476fd25841c51",
+              "sample_type": "Tissue Section",
+              "section_number": 7,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/187ec1fd772164bc8b6a8ea6dbf770ae",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, PAS, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/187ec1fd772164bc8b6a8ea6dbf770ae",
+                  "technology": "PAS",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0009-LK-102-7-PAS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/c62f303b801b4eaae818feba3ec2c327",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-neg, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/c62f303b801b4eaae818feba3ec2c327",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/8226b84e9574cdde0498abebb55e5661",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-pos, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/8226b84e9574cdde0498abebb55e5661",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/f31451771e1e2ceb31f8ac625a6fcca2",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/f31451771e1e2ceb31f8ac625a6fcca2",
+                  "technology": "AF",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0009-LK-102-7-AF_preIMS_registered_thumbnail.jpg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/7810dadcb43b35ef9de6378f3d53b532",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS, PAS microscopy",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/7810dadcb43b35ef9de6378f3d53b532",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/6aa9b45e2fe555a72335e21837334c52",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-neg, IMS negative",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/6aa9b45e2fe555a72335e21837334c52",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/91890e05edbd0a767092e10502b3ea99",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-pos, IMS positive",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/91890e05edbd0a767092e10502b3ea99",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/54ef9a03bc7abbedc60a261bf49e1119",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/54ef9a03bc7abbedc60a261bf49e1119",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/1789590e753b67b472fd1cf786717d7f",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: LC-MS-untargeted, LC-MS/MS (label-free proteomics)",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/1789590e753b67b472fd1cf786717d7f",
+              "technology": "LC",
+              "thumbnail": "assets/icons/ico-bulk-lc.svg"
+            }
+          ],
+          "section_count": 7,
+          "section_size": 0.6,
+          "section_units": "millimeter",
+          "description": "20 x 8 x 4 millimeter, 0.6 millimeter, fresh_frozen_tissue, 7 Sections"
+        }
+      ]
+    },
+    {
+      "@id": "https://entity.api.hubmapconsortium.org/entities/3c3c49c7d38960fc1f8275dcf4e412f9",
+      "@type": "Donor",
+      "label": "Female, Age 58, BMI 23.0",
+      "description": "Entered 12/23/2019, Elizabeth Neumann, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/donor/3c3c49c7d38960fc1f8275dcf4e412f9",
+      "age": 58,
+      "sex": "Female",
+      "bmi": 23,
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/5d8e6e56-ce20-4550-9639-8d149c3d5838",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "creation_date": "2/12/2020 10:03:40 AM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Female, Age 58, BMI 23.0",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/5d8e6e56-ce20-4550-9639-8d149c3d5838_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 10:03:40 AM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFRightKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": -3.4300003051757812,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": -32.14999961853027,
+              "z_rotation": 41.81999969482422,
+              "z_scaling": 1,
+              "z_translation": -15.40999984741211
+            },
+            "x_dimension": 28,
+            "y_dimension": 17,
+            "z_dimension": 2
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/a481a72a4f0877f177b5c47f033bea88",
+          "label": "Registered 6/10/2020, Elizabeth Neumann, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/a481a72a4f0877f177b5c47f033bea88",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/d580c7d7e3d2334e1e8a396039a05470",
+              "@type": "Sample",
+              "label": "Registered 12/23/2019, Elizabeth Neumann, TMC-Vanderbilt",
+              "description": "28 x 17 x 2 millimeter, 2 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/d580c7d7e3d2334e1e8a396039a05470",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/1ba282aca9d844cb4bb0d9c79119a6d2",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-neg, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/1ba282aca9d844cb4bb0d9c79119a6d2",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/86f42c9115c6215ad71cfc24c39f6359",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-pos, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/86f42c9115c6215ad71cfc24c39f6359",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/f4cdcc39efdb068f91c29dc53f1504c9",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, PAS, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/f4cdcc39efdb068f91c29dc53f1504c9",
+                  "technology": "PAS",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0005-RK-1-1-PAS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/a698201644fede089d32d57b1e592753",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/a698201644fede089d32d57b1e592753",
+                  "technology": "AF",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0005-RK-1-1-AF_preIMS_registered_thumbnail.jpg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/598e80e7888712571caed6488c191302",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-neg, IMS negative",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/598e80e7888712571caed6488c191302",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/5753250650d5e5a4621e511594f93696",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-pos, IMS positive",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/5753250650d5e5a4621e511594f93696",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/13f68db2ce711221e402e6af2d8cad45",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS, PAS microscopy",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/13f68db2ce711221e402e6af2d8cad45",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/8122e6bbb32d0561eade1136d320a561",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/8122e6bbb32d0561eade1136d320a561",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            }
+          ],
+          "section_count": 1,
+          "section_size": 2,
+          "section_units": "millimeter",
+          "description": "28 x 17 x 2 millimeter, 2 millimeter, fresh_frozen_tissue, 1 Sections"
+        },
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/5d8e6e56-ce20-4550-9639-8d149c3d5838",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "creation_date": "2/12/2020 10:03:40 AM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Female, Age 58, BMI 23.0",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/5d8e6e56-ce20-4550-9639-8d149c3d5838_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 10:03:40 AM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFRightKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": -3.4300003051757812,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": -32.14999961853027,
+              "z_rotation": 41.81999969482422,
+              "z_scaling": 1,
+              "z_translation": -15.40999984741211
+            },
+            "x_dimension": 28,
+            "y_dimension": 17,
+            "z_dimension": 2
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/5e878eb0192414dee7be45d7d5610a84",
+          "label": "Registered 6/10/2020, Elizabeth Neumann, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/5e878eb0192414dee7be45d7d5610a84",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/c8f188581b2f32ac52ddb062c94df98d",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "28 x 17 x 0.3 millimeter, 0.3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/c8f188581b2f32ac52ddb062c94df98d",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/9c785489881a29b6b4f027e115022197",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "28 x 17 x 0.3 millimeter, 0.3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/9c785489881a29b6b4f027e115022197",
+              "sample_type": "Tissue Section",
+              "section_number": 2,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/37d16f706a1aa79931608aa695894c14",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "28 x 17 x 0.3 millimeter, 0.3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/37d16f706a1aa79931608aa695894c14",
+              "sample_type": "Tissue Section",
+              "section_number": 3,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/a8ab55fd2e4b5d302e039dda06551994",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "28 x 17 x 0.3 millimeter, 0.3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/a8ab55fd2e4b5d302e039dda06551994",
+              "sample_type": "Tissue Section",
+              "section_number": 4,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/d355f964f474f0965d716bc69e2d06af",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "28 x 17 x 0.3 millimeter, 0.3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/d355f964f474f0965d716bc69e2d06af",
+              "sample_type": "Tissue Section",
+              "section_number": 5,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/f2af72d820653f7ba36538789792f78c",
+              "@type": "Sample",
+              "label": "Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt",
+              "description": "28 x 17 x 0.3 millimeter, 0.3 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/f2af72d820653f7ba36538789792f78c",
+              "sample_type": "Tissue Section",
+              "section_number": 6,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/cc28d4b6954608bd6d045f98728ffb6b",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/cc28d4b6954608bd6d045f98728ffb6b",
+                  "technology": "AF",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0005-RK-4-172-AF_preIMS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/65dffa77af3430412ceb873e27660d40",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, PAS, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/65dffa77af3430412ceb873e27660d40",
+                  "technology": "PAS",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0005-RK-4-172-PAS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/735d6dafd8534d2c225753e8e55d629b",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-pos, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/735d6dafd8534d2c225753e8e55d629b",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/c4218553a530d95635c8e63bdcfcc9b0",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-neg, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/c4218553a530d95635c8e63bdcfcc9b0",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/8b347e7307c4e76f0ce20700ac77d38d",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/8b347e7307c4e76f0ce20700ac77d38d",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/058f837db913d4c3d0854eb2229c2695",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS, PAS microscopy",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/058f837db913d4c3d0854eb2229c2695",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/d9e3c80a32567cde9b61e38ce8693559",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-pos, IMS positive",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/d9e3c80a32567cde9b61e38ce8693559",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/32b778c55269d2f7d4c650316cee7815",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-neg, IMS negative",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/32b778c55269d2f7d4c650316cee7815",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/af8e5c3a7f66a105e8e19aba8a6fc6e3",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: LC-MS-untargeted, LC-MS/MS (label-free proteomics)",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/af8e5c3a7f66a105e8e19aba8a6fc6e3",
+              "technology": "LC",
+              "thumbnail": "assets/icons/ico-bulk-lc.svg"
+            }
+          ],
+          "section_count": 6,
+          "section_size": 0.3,
+          "section_units": "millimeter",
+          "description": "28 x 17 x 2 millimeter, 0.3 millimeter, fresh_frozen_tissue, 6 Sections"
+        }
+      ]
+    },
+    {
+      "@id": "https://entity.api.hubmapconsortium.org/entities/866a78fd1ac8d4db740ebbb49a205b8d",
+      "@type": "Donor",
+      "label": "Female, Age 66, BMI 25.4",
+      "description": "Entered 12/26/2019, Jamie Allen, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/donor/866a78fd1ac8d4db740ebbb49a205b8d",
+      "age": 66,
+      "sex": "Female",
+      "bmi": 25.4,
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/47f89696-e96a-41cc-8a88-cf4c4b3b8967",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "creation_date": "2/12/2020 10:30:12 AM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Female, Age 66, BMI 25.4",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/47f89696-e96a-41cc-8a88-cf4c4b3b8967_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 10:30:12 AM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFLeftKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": -6.969999313354492,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": 33.220001220703125,
+              "z_rotation": 338.25,
+              "z_scaling": 1,
+              "z_translation": -12.479999542236328
+            },
+            "x_dimension": 17,
+            "y_dimension": 16,
+            "z_dimension": 4
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/e5f2cb399e7e8885134c1b1a2b6acc9a",
+          "label": "Registered 6/10/2020, Jamie Allen, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/e5f2cb399e7e8885134c1b1a2b6acc9a",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/263e7f433d0affe5b37b03f4f368f6f8",
+              "@type": "Sample",
+              "label": "Registered 12/27/2019, Jamie Allen, TMC-Vanderbilt",
+              "description": "17 x 16 x 2 millimeter, 2 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/263e7f433d0affe5b37b03f4f368f6f8",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/bf801226662c6e0e430596573cd7817e",
+              "@type": "Sample",
+              "label": "Registered 12/27/2019, Jamie Allen, TMC-Vanderbilt",
+              "description": "17 x 16 x 2 millimeter, 2 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/bf801226662c6e0e430596573cd7817e",
+              "sample_type": "Tissue Section",
+              "section_number": 2,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/91bfc97dbaf57fa9a1d9181519c363f3",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-neg, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/91bfc97dbaf57fa9a1d9181519c363f3",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/41c5ebd1204fa6f3c55c98f4f0952dce",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-pos, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/41c5ebd1204fa6f3c55c98f4f0952dce",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/d4017eaa2282a9d193aad75ec491498b",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/d4017eaa2282a9d193aad75ec491498b",
+                  "technology": "AF",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0013-LK-202-96-AF_preIMS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/0bf9cb40adebcfb261dfbe9244607508",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, PAS, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/0bf9cb40adebcfb261dfbe9244607508",
+                  "technology": "PAS",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0013-LK-202-96-PAS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/5723910250c696b6c682fe8137870832",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/5723910250c696b6c682fe8137870832",
+                  "technology": "AF",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0013-LK-202-97-AF_preMxIF_registered_thumbnail.jpg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/8eccc1162147c6c240de384cffd1bcf4",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-neg, IMS negative",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/8eccc1162147c6c240de384cffd1bcf4",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/9d357d4bae9580895130bf0cd30fb99d",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-pos, IMS positive",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/9d357d4bae9580895130bf0cd30fb99d",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/2d6c51fbd0916109550a708d485903b7",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/2d6c51fbd0916109550a708d485903b7",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/7e3f3b5d1890f9612efb91d3a820cdcc",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS, PAS microscopy",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/7e3f3b5d1890f9612efb91d3a820cdcc",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/dc289471333309925e46ceb9bafafaf4",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/dc289471333309925e46ceb9bafafaf4",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            }
+          ],
+          "section_count": 2,
+          "section_size": 2,
+          "section_units": "millimeter",
+          "description": "17 x 16 x 4 millimeter, 2 millimeter, fresh_frozen_tissue, 2 Sections"
+        }
+      ]
+    },
+    {
+      "@id": "https://entity.api.hubmapconsortium.org/entities/c07f39795ed04df93bc60075e34fd654",
+      "@type": "Donor",
+      "label": "Male, Age 48, BMI 35.3",
+      "description": "Entered 12/26/2019, Jamie Allen, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/donor/c07f39795ed04df93bc60075e34fd654",
+      "age": 48,
+      "sex": "Male",
+      "bmi": 35.3,
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/2ee6c4a3-c11a-4395-a42b-bca1c6bfbb6b",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "creation_date": "2/12/2020 10:15:58 AM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Male, Age 48, BMI 35.3",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/2ee6c4a3-c11a-4395-a42b-bca1c6bfbb6b_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 10:15:58 AM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMRightKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": -12.75,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": 28.650001525878906,
+              "z_rotation": 318.17999267578125,
+              "z_scaling": 1,
+              "z_translation": -12.639999389648438
+            },
+            "x_dimension": 15,
+            "y_dimension": 10,
+            "z_dimension": 10
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/a90f1880982cff8bd1628a6e0bac564c",
+          "label": "Registered 6/10/2020, Jamie Allen, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/a90f1880982cff8bd1628a6e0bac564c",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/41380e3213645883329e70c863983d5a",
+              "@type": "Sample",
+              "label": "Registered 12/26/2019, Jamie Allen, TMC-Vanderbilt",
+              "description": "15 x 10 x 5 millimeter, 5 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/41380e3213645883329e70c863983d5a",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/7f29539938a81c1f098d20f422187d0c",
+              "@type": "Sample",
+              "label": "Registered 12/26/2019, Jamie Allen, TMC-Vanderbilt",
+              "description": "15 x 10 x 5 millimeter, 5 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/7f29539938a81c1f098d20f422187d0c",
+              "sample_type": "Tissue Section",
+              "section_number": 2,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/44e831e93409ec0f09bfb240207061f8",
+                  "@type": "Dataset",
+                  "label": "Registered 9/12/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-pos, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/44e831e93409ec0f09bfb240207061f8",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/5d4641873cdbbc507bf0962a737c07c4",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-neg, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/5d4641873cdbbc507bf0962a737c07c4",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/e4ddfd3408f7a7baaad1cebdd5ab7d4b",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, PAS, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/e4ddfd3408f7a7baaad1cebdd5ab7d4b",
+                  "technology": "PAS",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0008-RK-403-100-PAS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/ceff8dd907f28fd1508f4f4201d851d2",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/ceff8dd907f28fd1508f4f4201d851d2",
+                  "technology": "AF",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0008-RK-403-100-AF_preIMS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/c95ebd4e7589993db7884a48cb2b3114",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/c95ebd4e7589993db7884a48cb2b3114",
+                  "technology": "AF",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0008-RK-403-101-AF_preMxIF_registered_thumbnail.jpg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/cc856ea20548c887719abbac9a33a702",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-pos, IMS positive",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/cc856ea20548c887719abbac9a33a702",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/1e995c94f5e0affd76af014834a3c3a0",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-neg, IMS negative",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/1e995c94f5e0affd76af014834a3c3a0",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/9eb457ab0141f7ba734e337917a9bde9",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS, PAS microscopy",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/9eb457ab0141f7ba734e337917a9bde9",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/2f9e91ff774243ef11d148a2bf7a6822",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/2f9e91ff774243ef11d148a2bf7a6822",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/dbf8d98f22c3579d1dd3dfb9931cf714",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/dbf8d98f22c3579d1dd3dfb9931cf714",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            }
+          ],
+          "section_count": 2,
+          "section_size": 5,
+          "section_units": "millimeter",
+          "description": "15 x 10 x 10 millimeter, 5 millimeter, fresh_frozen_tissue, 2 Sections"
+        }
+      ]
+    },
+    {
+      "@id": "https://entity.api.hubmapconsortium.org/entities/ab33ba540469ce7eea6ecc7a13b9075c",
+      "@type": "Donor",
+      "label": "Female, Age 76, BMI 37.5",
+      "description": "Entered 12/26/2019, Jamie Allen, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/donor/ab33ba540469ce7eea6ecc7a13b9075c",
+      "age": 76,
+      "sex": "Female",
+      "bmi": 37.5,
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/28769c20-7852-48e9-8579-d06ce74bb2cd",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "creation_date": "2/12/2020 10:32:45 AM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Female, Age 76, BMI 37.5",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/28769c20-7852-48e9-8579-d06ce74bb2cd_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 10:32:45 AM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFLeftKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": -4.989999771118164,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": 38.25,
+              "z_rotation": 334.9100036621094,
+              "z_scaling": 1,
+              "z_translation": -12.870000839233398
+            },
+            "x_dimension": 19,
+            "y_dimension": 14,
+            "z_dimension": 7
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/6585f87d93fe9621d151f0f225a8edc2",
+          "label": "Registered 6/10/2020, Jamie Allen, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/6585f87d93fe9621d151f0f225a8edc2",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/6256c6c18f7949ca0cb43a8b4a65de8d",
+              "@type": "Sample",
+              "label": "Registered 12/27/2019, Jamie Allen, TMC-Vanderbilt",
+              "description": "19 x 14 x 7 millimeter, 7 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/6256c6c18f7949ca0cb43a8b4a65de8d",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/23f3245f31fcbd011b3efc0bc5f98fc4",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/23f3245f31fcbd011b3efc0bc5f98fc4",
+                  "technology": "AF",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0014-LK-203-108-AF_preIMS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/4a1f8f0e22cf184574896ee1005c01c7",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, PAS, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/4a1f8f0e22cf184574896ee1005c01c7",
+                  "technology": "PAS",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0014-LK-203-108-PAS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/e42aa6edcd13c215fd4efadeeaafa50a",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-pos, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/e42aa6edcd13c215fd4efadeeaafa50a",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/526f2ce15a269e8cc0bec284652f013a",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-neg, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/526f2ce15a269e8cc0bec284652f013a",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/46ed471a6b4ad5b97817ff2c26ef6ddd",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/46ed471a6b4ad5b97817ff2c26ef6ddd",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/1e9b9d5ac57ac8bd4093f2503675a2cd",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS, PAS microscopy",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/1e9b9d5ac57ac8bd4093f2503675a2cd",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/3bb0a1651d75a53e69019812acd9d1a0",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-pos, IMS positive",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/3bb0a1651d75a53e69019812acd9d1a0",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/6561d1c623a06c49ed5ecd68cb28cd15",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-neg, IMS negative",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/6561d1c623a06c49ed5ecd68cb28cd15",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ],
+          "section_count": 1,
+          "section_size": 7,
+          "section_units": "millimeter",
+          "description": "19 x 14 x 7 millimeter, 7 millimeter, fresh_frozen_tissue, 1 Sections"
+        }
+      ]
+    },
+    {
+      "@id": "https://entity.api.hubmapconsortium.org/entities/aa97d20b4a8f3c1198826091bc5455d9",
+      "@type": "Donor",
+      "label": "Female, Age 44, BMI 28.0",
+      "description": "Entered 12/26/2019, Jamie Allen, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/donor/aa97d20b4a8f3c1198826091bc5455d9",
+      "age": 44,
+      "sex": "Female",
+      "bmi": 28,
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/6264c640-fadc-4852-b395-8a0bdc3d99bf",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "creation_date": "2/12/2020 10:26:06 AM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Female, Age 44, BMI 28.0",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/6264c640-fadc-4852-b395-8a0bdc3d99bf_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 10:26:06 AM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFRightKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": 8.849998474121094,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": 33.220001220703125,
+              "z_rotation": 308.1400146484375,
+              "z_scaling": 1,
+              "z_translation": -9.129999160766602
+            },
+            "x_dimension": 17,
+            "y_dimension": 18,
+            "z_dimension": 3
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/9cab477791e415a4b4ceed2c7211a152",
+          "label": "Registered 6/10/2020, Jamie Allen, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/9cab477791e415a4b4ceed2c7211a152",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/1ba095cdaf30ab4fe23cf7266f5d8c97",
+              "@type": "Sample",
+              "label": "Registered 12/27/2019, Jamie Allen, TMC-Vanderbilt",
+              "description": "17 x 18 x 1.5 millimeter, 1.5 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/1ba095cdaf30ab4fe23cf7266f5d8c97",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/6d316079917ef731089fe4f25f6a5437",
+              "@type": "Sample",
+              "label": "Registered 12/27/2019, Jamie Allen, TMC-Vanderbilt",
+              "description": "17 x 18 x 1.5 millimeter, 1.5 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/6d316079917ef731089fe4f25f6a5437",
+              "sample_type": "Tissue Section",
+              "section_number": 2,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/2dc0514607ae08af7004d9cb8c9640c9",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/2dc0514607ae08af7004d9cb8c9640c9",
+                  "technology": "AF",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0012-RK-103-75-AF_preIMS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/140f7a28c4957437e5c9597d9d3c50b8",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-neg, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/140f7a28c4957437e5c9597d9d3c50b8",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/e59c0efd96fe0ae8a3f61ebaccf76e2c",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-pos, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/e59c0efd96fe0ae8a3f61ebaccf76e2c",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/25af9808426a36f87cd3450b8eb83684",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, PAS, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/25af9808426a36f87cd3450b8eb83684",
+                  "technology": "PAS",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0012-RK-103-75-PAS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/85b4a45353628c7ab7326f9491dc3ef4",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/85b4a45353628c7ab7326f9491dc3ef4",
+                  "technology": "AF",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0012-RK-103-76-AF_preMxIF_registered_thumbnail.jpg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/ac616d7b9149d279b29a5df3472486ac",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/ac616d7b9149d279b29a5df3472486ac",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/146063814f6bd2b6546e950d0ca5f8c3",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-neg, IMS negative",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/146063814f6bd2b6546e950d0ca5f8c3",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/6e95d91da2870ffc0a473c23038fc5e1",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-pos, IMS positive",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/6e95d91da2870ffc0a473c23038fc5e1",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/5eacc268fa94d3419580ff04c9a9c76d",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS, PAS microscopy",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/5eacc268fa94d3419580ff04c9a9c76d",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/9a519955a24cc30b7184177a5a89cecb",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/9a519955a24cc30b7184177a5a89cecb",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            }
+          ],
+          "section_count": 2,
+          "section_size": 1.5,
+          "section_units": "millimeter",
+          "description": "17 x 18 x 3 millimeter, 1.5 millimeter, fresh_frozen_tissue, 2 Sections"
+        }
+      ]
+    },
+    {
+      "@id": "https://entity.api.hubmapconsortium.org/entities/96a667104f92a38f5d4f97c38d94e738",
+      "@type": "Donor",
+      "label": "Female, Age 66, BMI 32.2",
+      "description": "Entered 12/26/2019, Jamie Allen, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/donor/96a667104f92a38f5d4f97c38d94e738",
+      "age": 66,
+      "sex": "Female",
+      "bmi": 32.2,
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/0.5/004c977d-dc98-472b-b02e-4209f8b41387",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "creation_date": "2/12/2020 10:12:17 AM",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "dimension_units": "millimeter",
+            "label": "SpatialEntity for Female, Age 66, BMI 32.2",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/0.5/004c977d-dc98-472b-b02e-4209f8b41387_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2/12/2020 10:12:17 AM",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFLeftKidney_Patch",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": 10.669998168945312,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": 30.93000030517578,
+              "z_rotation": 36.79999923706055,
+              "z_scaling": 1,
+              "z_translation": -13.850000381469727
+            },
+            "x_dimension": 20,
+            "y_dimension": 15,
+            "z_dimension": 4
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/3a4b8bfca8e842cae400f49e19987c7c",
+          "label": "Registered 6/10/2020, Elizabeth Neumann, TMC-Vanderbilt",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/3a4b8bfca8e842cae400f49e19987c7c",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/b8f8acd3659ac151092f6a8346150a06",
+              "@type": "Sample",
+              "label": "Registered 12/23/2019, Elizabeth Neumann, TMC-Vanderbilt",
+              "description": "20 x 15 x 4 millimeter, 4 millimeter, fresh_frozen_tissue",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/b8f8acd3659ac151092f6a8346150a06",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/d0b944edce4f7fc2a61321d5dc915a72",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, AF, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/d0b944edce4f7fc2a61321d5dc915a72",
+                  "technology": "AF",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0007-LK-203-103-AF_preIMS_registered_thumbnail.jpg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/72d7f6895a34be4e0f43df278c675da2",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-pos, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/72d7f6895a34be4e0f43df278c675da2",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/a9e97dfb17c7fe08a9c4590318955095",
+                  "@type": "Dataset",
+                  "label": "Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, MALDI-IMS-neg, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/a9e97dfb17c7fe08a9c4590318955095",
+                  "technology": "MALDI",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/23f1637a0a90fdd2a8feece44d00c22e",
+                  "@type": "Dataset",
+                  "label": "Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt",
+                  "description": "Data/Assay Types: image_pyramid, PAS, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/23f1637a0a90fdd2a8feece44d00c22e",
+                  "technology": "PAS",
+                  "thumbnail": "assets/thumbnails/TMC-Vanderbilt/DR1/VAN0007-LK-203-103-PAS_registered_thumbnail.jpg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/0a6f5c1afbcc31622eb34daf88c2c016",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: AF, AF",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/0a6f5c1afbcc31622eb34daf88c2c016",
+              "technology": "AF",
+              "thumbnail": "assets/icons/ico-spatial-af.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/d4fae29feb0215a11b6e4d3072107e09",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-pos, IMS positive",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/d4fae29feb0215a11b6e4d3072107e09",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/1d1a8376b558398588f92688314f23c5",
+              "@type": "Dataset",
+              "label": "Registered 9/8/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: MALDI-IMS-neg, IMS negative",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/1d1a8376b558398588f92688314f23c5",
+              "technology": "MALDI",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/7eef1634020f429f9855ff319ff0c65e",
+              "@type": "Dataset",
+              "label": "Registered 8/22/2020, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS, PAS microscopy",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/7eef1634020f429f9855ff319ff0c65e",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ],
+          "section_count": 1,
+          "section_size": 4,
+          "section_units": "millimeter",
+          "description": "20 x 15 x 4 millimeter, 4 millimeter, fresh_frozen_tissue, 1 Sections"
+        }
+      ]
+    }
+  ]
+}

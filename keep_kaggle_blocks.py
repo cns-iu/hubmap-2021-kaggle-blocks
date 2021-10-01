@@ -1,65 +1,9 @@
-import urllib
-import json
 import csv
+import json
 import os
 import ssl
+import urllib.request
 
-
-def main():
-
-    # get HuBMAP IDs from CSV file
-    hubmap_ids = []
-    with open('kaggle_hubmap_ids.csv', newline='') as csv_file:
-        for line in csv_file:
-            if 'HBM' in line:
-                start = line.find('HBM')
-                end = len(line)
-                hubmap_ids.append(line[start:end].strip())
-    
-    # get uuids for all hubmap hubmap_ids
-    uuids = []
-    counter = 0
-    for item in hubmap_ids:
-        with urllib.request.urlopen("https://entity.api.hubmapconsortium.org/entities/" + item) as url:
-            response = json.loads(url.read().decode())
-            if response:
-                # print('received')
-                counter = counter + 1
-                uuids.append(response['uuid'])
-
-    # create mapping from hubmap_ids to uuids
-    look_up_dict = {}
-    for i in range(0,len(hubmap_ids)):
-        look_up_dict[hubmap_ids[i]] = uuids[i]
-
-# go through JSON-LD and find uuids
-    with urllib.request.urlopen("https://hubmap-link-api.herokuapp.com/hubmap-datasets?format=jsonld") as url:
-        data = json.loads(url.read().decode())
-
-        sample_ids = []
-        for item in data['@graph']:
-            for sample in item['samples']:
-                for dataset in sample['datasets']:
-                    for key in look_up_dict:
-                        if look_up_dict[key] in dataset['@id']:
-                            sample_ids.append(sample['@id'])
-
-
-
-
-
-# remove samples without rui_location from JSON-LD
-        for item in data['@graph']:
-
-            for sample in item['samples']:
-                if sample['@id'] not in sample_ids:
-                    pass
-                    # del
-
-            print(len(item['samples']))
-
-
-# save/overwrite JSON-LD file
 
 def make_ssl_work():
     if (not os.environ.get('PYTHONHTTPSVERIFY', '') and
@@ -67,20 +11,68 @@ def make_ssl_work():
         ssl._create_default_https_context = ssl._create_unverified_context
 
 make_ssl_work()
-main()
 
+# get HuBMAP IDs from CSV file
+with open('kaggle_hubmap_ids.csv') as csv_file:
+    reader = csv.DictReader(csv_file)
+    hubmap_ids = [ row['HuBMAP ID'] for row in reader ]
 
+# get uuids for all hubmap hubmap_ids
+iris = set()
+for item in hubmap_ids:
+    with urllib.request.urlopen("https://entity.api.hubmapconsortium.org/entities/" + item) as url:
+        response = json.loads(url.read().decode())
+        if response:
+            iris.add('https://entity.api.hubmapconsortium.org/entities/' + response['uuid'])
 
+# go through JSON-LD and find uuids
+with urllib.request.urlopen("https://hubmap-link-api.herokuapp.com/hubmap-datasets?format=jsonld") as url:
+    data = json.loads(url.read().decode())
+    original_data = data['@graph']
 
+    keep = set()
+    found = set()
+    for item in data['@graph']:
+        for sample in item['samples']:
+            if sample['@id'] in iris:
+                keep.add(item['@id'])
+                found.add(sample['@id'])    
 
-# with open('kaggle_hubmap_ids.csv', mode='r') as infile:
-#     reader = csv.reader(infile)
-#     with open('coors_new.csv', mode='w') as outfile:
-#         writer = csv.writer(outfile)
-#         mydict = {rows[0]: rows[1] for rows in reader}
-        # print(mydict)
-        # print(mydict.keys)
-    # for line in csvfile:
-    #     print(line)
-    # print(csvfile)
+            for dataset in sample['datasets']:
+                if dataset['@id'] in iris:
+                    keep.add(item['@id'])
+                    found.add(dataset['@id'])
 
+            for section in sample['sections']:
+                if section['@id'] in iris:
+                    keep.add(item['@id'])
+                    found.add(section['@id'])
+
+                for dataset in section['datasets']:
+                    if dataset['@id'] in iris:
+                        keep.add(item['@id'])
+                        found.add(dataset['@id'])
+
+                for subsample in section['samples']:
+                    if subsample['@id'] in iris:
+                        keep.add(item['@id'])
+                        found.add(subsample['@id'])    
+
+                    for dataset in subsample['datasets']:
+                        if dataset['@id'] in iris:
+                            keep.add(item['@id'])
+                            found.add(dataset['@id'])
+
+# remove samples without rui_location from JSON-LD
+data['@graph'] = list(filter(lambda item: item['@id'] in keep, data['@graph']))
+
+print(f'''
+Original Donors: { len(original_data) }
+Kaggle Donors: { len(data['@graph']) } { len(keep) }
+Kaggle HBM IDs: { len(hubmap_ids) }
+Kaggle UUIDs: { len(iris) }
+Kaggle UUIDs Found: { len(found) }
+''')
+
+# save/overwrite JSON-LD file
+open('rui_location.jsonld', 'w').write(json.dumps(data, indent=2))
