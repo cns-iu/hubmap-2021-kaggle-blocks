@@ -5,8 +5,7 @@ import ssl
 import sys
 import urllib.request
 
-# TOKEN = sys.argv[1] if len(sys.argv) > 1 else None
-TOKEN = 'AgJopBOa62o1nerPy31O2Oz8xb6rX6GXX7B2qnJdKBbrdGmbdBs0C50N803083lVkl0VD7QpMKaQK9T3Vxk84IwJXb'
+TOKEN = sys.argv[1] if len(sys.argv) > 1 else None
 HBM_LINK = 'https://hubmap-link-api.herokuapp.com/hubmap-datasets?format=jsonld'
 if TOKEN:
     HBM_LINK += '&token=' + TOKEN
