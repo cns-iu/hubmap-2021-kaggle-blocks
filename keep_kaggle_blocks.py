@@ -5,7 +5,8 @@ import ssl
 import sys
 import urllib.request
 
-TOKEN = sys.argv[1] if len(sys.argv) > 1 else None
+# TOKEN = sys.argv[1] if len(sys.argv) > 1 else None
+TOKEN = 'AgJopBOa62o1nerPy31O2Oz8xb6rX6GXX7B2qnJdKBbrdGmbdBs0C50N803083lVkl0VD7QpMKaQK9T3Vxk84IwJXb'
 HBM_LINK = 'https://hubmap-link-api.herokuapp.com/hubmap-datasets?format=jsonld'
 if TOKEN:
     HBM_LINK += '&token=' + TOKEN
@@ -25,7 +26,6 @@ with open('kaggle_hubmap_ids.csv') as csv_file:
 # get uuids for all hubmap hubmap_ids
 iris = set()
 for item in hubmap_ids:
-    print(item)
     request = urllib.request.Request(
         'https://entity.api.hubmapconsortium.org/entities/' + item)
     if TOKEN:
@@ -39,7 +39,6 @@ for item in hubmap_ids:
 with urllib.request.urlopen(HBM_LINK) as url:
     data = json.loads(url.read().decode())
     original_data = data['@graph']
-
     keep = set()
     found = set()
     for item in data['@graph']:
