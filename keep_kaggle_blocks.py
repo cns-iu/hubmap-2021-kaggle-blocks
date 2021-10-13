@@ -25,9 +25,9 @@ with open('kaggle_hubmap_ids.csv') as csv_file:
 
 # get uuids for all hubmap hubmap_ids
 iris = set()
-for item in hubmap_ids:
+for donor in hubmap_ids:
     request = urllib.request.Request(
-        'https://entity.api.hubmapconsortium.org/entities/' + item)
+        'https://entity.api.hubmapconsortium.org/entities/' + donor)
     if TOKEN:
         request.add_header('Authorization', 'Bearer ' + TOKEN)
     with urllib.request.urlopen(request) as url:
@@ -42,39 +42,48 @@ with urllib.request.urlopen(HBM_LINK) as url:
     original_data = data['@graph']
     keep = set()
     found = set()
-    for item in data['@graph']:
-        for sample in item['samples']:
+    for donor in data['@graph']:
+        samples_to_keep = set()
+        for sample in donor['samples']:
             if sample['@id'] in iris:
-                keep.add(item['@id'])
+                keep.add(donor['@id'])
                 found.add(sample['@id'])
+                samples_to_keep.add(sample['@id'])
 
             for dataset in sample['datasets']:
                 if dataset['@id'] in iris:
-                    keep.add(item['@id'])
+                    keep.add(donor['@id'])
                     found.add(dataset['@id'])
+                    samples_to_keep.add(sample['@id'])
 
             for section in sample['sections']:
                 if section['@id'] in iris:
-                    keep.add(item['@id'])
+                    keep.add(donor['@id'])
                     found.add(section['@id'])
+                    samples_to_keep.add(sample['@id'])
 
                 for dataset in section['datasets']:
                     if dataset['@id'] in iris:
-                        keep.add(item['@id'])
+                        keep.add(donor['@id'])
                         found.add(dataset['@id'])
+                        samples_to_keep.add(sample['@id'])
 
                 for subsample in section['samples']:
                     if subsample['@id'] in iris:
-                        keep.add(item['@id'])
+                        keep.add(donor['@id'])
                         found.add(subsample['@id'])
+                        samples_to_keep.add(sample['@id'])
 
                     for dataset in subsample['datasets']:
                         if dataset['@id'] in iris:
-                            keep.add(item['@id'])
+                            keep.add(donor['@id'])
                             found.add(dataset['@id'])
+                            samples_to_keep.add(sample['@id'])
+
+        donor['samples'] = list(filter(lambda sample: sample['@id'] in samples_to_keep, donor['samples']))
 
 # remove samples without rui_location from JSON-LD
-data['@graph'] = list(filter(lambda item: item['@id'] in keep, data['@graph']))
+data['@graph'] = list(filter(lambda donor: donor['@id'] in keep, data['@graph']))
 
 print(f'''
 Original Donors: { len(original_data) }
@@ -84,15 +93,6 @@ Kaggle UUIDs: { len(iris) }
 Kaggle IDs Kept: {len(keep) }
 Kaggle UUIDs Found: { len(found)}
 ''')
-
-# remove dupliate rui_locations by '@id'
-unique_ids = []
-for donor in data['@graph']:
-    for sample in donor['samples']:
-        if sample['rui_location']['@id'] not in unique_ids:
-            unique_ids.append(sample['rui_location']['@id'])
-        else:
-            sample['rui_location'] = ""
 
 # save/overwrite JSON-LD file
 open('rui_locations.jsonld', 'w').write(json.dumps(data, indent=2))
