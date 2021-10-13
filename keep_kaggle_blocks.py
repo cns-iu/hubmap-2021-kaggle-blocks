@@ -5,22 +5,25 @@ import ssl
 import sys
 import urllib.request
 
-TOKEN = sys.argv[1] if len(sys.argv) > 1 else None
+# TOKEN = sys.argv[1] if len(sys.argv) > 1 else None
+TOKEN = 'Ag9Qn8a7XyeEXmGe0VGPqzyq41W95DPXWJM8YaGKr281e6BykvtpCByX92bXOo92GWNaee6079GKlpSrXVM9pUxzbo'
 HBM_LINK = 'https://hubmap-link-api.herokuapp.com/hubmap-datasets?format=jsonld'
 if TOKEN:
     HBM_LINK += '&token=' + TOKEN
+
 
 def make_ssl_work():
     if (not os.environ.get('PYTHONHTTPSVERIFY', '') and
             getattr(ssl, '_create_unverified_context', None)):
         ssl._create_default_https_context = ssl._create_unverified_context
 
+
 make_ssl_work()
 
 # get HuBMAP IDs from CSV file
 with open('kaggle_hubmap_ids.csv') as csv_file:
     reader = csv.DictReader(csv_file)
-    hubmap_ids = [ row['HuBMAP ID'] for row in reader ]
+    hubmap_ids = [row['HuBMAP ID'] for row in reader]
 
 # get uuids for all hubmap hubmap_ids
 iris = set()
@@ -32,7 +35,8 @@ for item in hubmap_ids:
     with urllib.request.urlopen(request) as url:
         response = json.loads(url.read().decode())
         if response:
-            iris.add('https://entity.api.hubmapconsortium.org/entities/' + response['uuid'])
+            iris.add(
+                'https://entity.api.hubmapconsortium.org/entities/' + response['uuid'])
 
 # go through JSON-LD and find uuids
 with urllib.request.urlopen(HBM_LINK) as url:
@@ -44,7 +48,7 @@ with urllib.request.urlopen(HBM_LINK) as url:
         for sample in item['samples']:
             if sample['@id'] in iris:
                 keep.add(item['@id'])
-                found.add(sample['@id'])    
+                found.add(sample['@id'])
 
             for dataset in sample['datasets']:
                 if dataset['@id'] in iris:
@@ -64,7 +68,7 @@ with urllib.request.urlopen(HBM_LINK) as url:
                 for subsample in section['samples']:
                     if subsample['@id'] in iris:
                         keep.add(item['@id'])
-                        found.add(subsample['@id'])    
+                        found.add(subsample['@id'])
 
                     for dataset in subsample['datasets']:
                         if dataset['@id'] in iris:
@@ -79,8 +83,21 @@ Original Donors: { len(original_data) }
 Kaggle Donors: { len(data['@graph']) } { len(keep) }
 Kaggle HBM IDs: { len(hubmap_ids) }
 Kaggle UUIDs: { len(iris) }
-Kaggle UUIDs Found: { len(found) }
+Kaggle IDs Kept: {len(keep) }
+Kaggle UUIDs Found: { len(found)}
 ''')
+
+# remove dupliate rui_loctions by id
+unique_ids = []
+for donor in data['@graph']:
+    for sample in donor['samples']:
+        if sample['rui_location']['@id'] not in unique_ids:
+            unique_ids.append(sample['rui_location']['@id'])
+        else:
+            sample['rui_location'] = ""
+
+print(unique_ids)
+print(len(unique_ids))
 
 # save/overwrite JSON-LD file
 open('rui_locations.jsonld', 'w').write(json.dumps(data, indent=2))
