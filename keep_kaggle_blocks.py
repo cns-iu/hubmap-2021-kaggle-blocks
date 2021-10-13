@@ -6,7 +6,7 @@ import sys
 import urllib.request
 
 # TOKEN = sys.argv[1] if len(sys.argv) > 1 else None
-TOKEN = 'Ag9Qn8a7XyeEXmGe0VGPqzyq41W95DPXWJM8YaGKr281e6BykvtpCByX92bXOo92GWNaee6079GKlpSrXVM9pUxzbo'
+TOKEN = 'Ag78dKQOgjdV7xwpBd3Q6G37P98mJKGWQ3Nk8v0DdmPyYmMG5dSWCXknQmgqXbB5eEwvX8WNGV0a1zszkEEobhadm3'
 HBM_LINK = 'https://hubmap-link-api.herokuapp.com/hubmap-datasets?format=jsonld'
 if TOKEN:
     HBM_LINK += '&token=' + TOKEN
@@ -16,8 +16,6 @@ def make_ssl_work():
     if (not os.environ.get('PYTHONHTTPSVERIFY', '') and
             getattr(ssl, '_create_unverified_context', None)):
         ssl._create_default_https_context = ssl._create_unverified_context
-
-
 make_ssl_work()
 
 # get HuBMAP IDs from CSV file
@@ -87,7 +85,7 @@ Kaggle IDs Kept: {len(keep) }
 Kaggle UUIDs Found: { len(found)}
 ''')
 
-# remove dupliate rui_loctions by id
+# remove dupliate rui_locations by '@id'
 unique_ids = []
 for donor in data['@graph']:
     for sample in donor['samples']:
@@ -95,9 +93,6 @@ for donor in data['@graph']:
             unique_ids.append(sample['rui_location']['@id'])
         else:
             sample['rui_location'] = ""
-
-print(unique_ids)
-print(len(unique_ids))
 
 # save/overwrite JSON-LD file
 open('rui_locations.jsonld', 'w').write(json.dumps(data, indent=2))
