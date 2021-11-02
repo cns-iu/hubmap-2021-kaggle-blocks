@@ -1,0 +1,1000 @@
+{
+  "@context": {
+    "@base": "http://purl.org/ccf/latest/ccf-entity.owl#",
+    "@vocab": "http://purl.org/ccf/latest/ccf-entity.owl#",
+    "ccf": "http://purl.org/ccf/latest/ccf.owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label",
+    "description": "rdfs:comment",
+    "link": {
+      "@id": "rdfs:seeAlso",
+      "@type": "@id"
+    },
+    "samples": {
+      "@reverse": "has_donor"
+    },
+    "sections": {
+      "@id": "has_tissue_section",
+      "@type": "@id"
+    },
+    "datasets": {
+      "@id": "has_dataset",
+      "@type": "@id"
+    },
+    "rui_location": {
+      "@id": "has_spatial_entity",
+      "@type": "@id"
+    },
+    "ontologyTerms": {
+      "@id": "has_ontology_term",
+      "@type": "@id"
+    },
+    "thumbnail": {
+      "@id": "has_thumbnail"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://entity.api.hubmapconsortium.org/entities/be425f8a2963dda1d3a7a0c79de5e466",
+      "@type": "Donor",
+      "label": "Female, Age 24, BMI 23.2",
+      "description": "Entered 1/27/2021, daniel cotter, TMC-Stanford",
+      "link": "https://portal.hubmapconsortium.org/browse/donor/be425f8a2963dda1d3a7a0c79de5e466",
+      "age": 24,
+      "sex": "Female",
+      "bmi": 23.2,
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Stanford",
+      "provider_uuid": "def5fd76-ed43-11e8-b56a-0e8017bdda58",
+      "samples": [
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/2f0bc1c1-551b-46d8-bd70-c77ac180ab7c",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0000059",
+              "http://purl.obolibrary.org/obo/UBERON_0001155",
+              "http://purl.obolibrary.org/obo/UBERON_0001157",
+              "http://purl.obolibrary.org/obo/UBERON_0001158",
+              "http://purl.obolibrary.org/obo/UBERON_0022276"
+            ],
+            "creation_date": "2021-10-19",
+            "creator": "Yiing Lin",
+            "creator_first_name": "Yiing",
+            "creator_last_name": "Lin",
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/2f0bc1c1-551b-46d8-bd70-c77ac180ab7c_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2021-10-19",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFColon",
+              "translation_units": "millimeter",
+              "x_rotation": 90,
+              "x_scaling": 1,
+              "x_translation": 132.799,
+              "y_rotation": -3,
+              "y_scaling": 1,
+              "y_translation": 203.6,
+              "z_rotation": 88,
+              "z_scaling": 1,
+              "z_translation": 166.386
+            },
+            "slice_count": 1,
+            "slice_thickness": 1,
+            "x_dimension": 20,
+            "y_dimension": 50,
+            "z_dimension": 5
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/f53621bf6e120c11dd9a1e11d586d656",
+          "label": "Registered 10/19/2021, daniel cotter, TMC-Stanford",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/f53621bf6e120c11dd9a1e11d586d656",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/c46f3ffa2ad148019ee983453d06b745",
+              "@type": "Sample",
+              "label": "Registered 2/12/2021, daniel cotter, TMC-Stanford",
+              "description": "20 x 50 x 1 millimeter, 1 millimeter, organ_piece",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/c46f3ffa2ad148019ee983453d06b745",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/f2647d9533956fdb12da6b1fc6254441",
+                  "@type": "Dataset",
+                  "label": "Registered 4/21/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: salmon_sn_rnaseq_10x, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/f2647d9533956fdb12da6b1fc6254441",
+                  "technology": "10x",
+                  "thumbnail": "assets/icons/ico-bulk-10x.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/692ed073768633721f33a542d088da69",
+                  "@type": "Dataset",
+                  "label": "Registered 4/23/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: sn_atac_seq, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/692ed073768633721f33a542d088da69",
+                  "technology": "OTHER",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/8bf859e19360761b4720c168517589b3",
+                  "@type": "Dataset",
+                  "label": "Registered 10/24/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: codex_cytokit, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/8bf859e19360761b4720c168517589b3",
+                  "technology": "CODEX",
+                  "thumbnail": "assets/icons/ico-spatial-codex.svg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/a078805198f9f7f022b83de898a608a9",
+              "@type": "Dataset",
+              "label": "Registered 4/21/2021, daniel cotter, TMC-Stanford",
+              "description": "Data/Assay Types: snRNAseq, snRNAseq",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/a078805198f9f7f022b83de898a608a9",
+              "technology": "OTHER",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/8dd2aaa4ac8f04b5bd57b2b6a83d4a5a",
+              "@type": "Dataset",
+              "label": "Registered 6/7/2021, daniel cotter, TMC-Stanford",
+              "description": "Data/Assay Types: snATACseq, snATACseq",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/8dd2aaa4ac8f04b5bd57b2b6a83d4a5a",
+              "technology": "OTHER",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/3f3fc7fbd6c9ddffd3cd96e07b946252",
+              "@type": "Dataset",
+              "label": "Registered 10/23/2021, daniel Cotter, TMC-Stanford",
+              "description": "Data/Assay Types: CODEX, CODEX",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/3f3fc7fbd6c9ddffd3cd96e07b946252",
+              "technology": "CODEX",
+              "thumbnail": "assets/icons/ico-spatial-codex.svg"
+            }
+          ],
+          "section_count": 1,
+          "section_size": 1,
+          "section_units": "millimeter",
+          "description": "20 x 50 x 5 millimeter, 1 millimeter, organ_piece, 1 Sections"
+        },
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/8b652088-8c73-466d-b59c-3fbb8c01e399",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0000059",
+              "http://purl.obolibrary.org/obo/UBERON_0001155",
+              "http://purl.obolibrary.org/obo/UBERON_0001159",
+              "http://purl.obolibrary.org/obo/UBERON_0001154",
+              "http://purl.obolibrary.org/obo/UBERON_0001158",
+              "http://purl.obolibrary.org/obo/UBERON_0001052"
+            ],
+            "creation_date": "2021-10-19",
+            "creator": "Yiing Lin",
+            "creator_first_name": "Yiing",
+            "creator_last_name": "Lin",
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/8b652088-8c73-466d-b59c-3fbb8c01e399_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2021-10-19",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFColon",
+              "translation_units": "millimeter",
+              "x_rotation": 90,
+              "x_scaling": 1,
+              "x_translation": 122.658,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": 94.075,
+              "z_rotation": 78,
+              "z_scaling": 1,
+              "z_translation": 101.565
+            },
+            "x_dimension": 20,
+            "y_dimension": 50,
+            "z_dimension": 5
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/804aa1a7fcdf319c206808c106f67008",
+          "label": "Registered 10/19/2021, daniel cotter, TMC-Stanford",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/804aa1a7fcdf319c206808c106f67008",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/50d4f32223c8eb4f294b7fa7bb355c45",
+              "@type": "Sample",
+              "label": "Registered 2/12/2021, daniel cotter, TMC-Stanford",
+              "description": "20 x 50 x 5 millimeter, 5 millimeter, organ_piece",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/50d4f32223c8eb4f294b7fa7bb355c45",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/846e56ed969922f1cb7a81619b175620",
+                  "@type": "Dataset",
+                  "label": "Registered 4/21/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: salmon_sn_rnaseq_10x, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/846e56ed969922f1cb7a81619b175620",
+                  "technology": "10x",
+                  "thumbnail": "assets/icons/ico-bulk-10x.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/82ffdc56b04f0b4c8bffeacb635e225f",
+                  "@type": "Dataset",
+                  "label": "Registered 4/23/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: sn_atac_seq, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/82ffdc56b04f0b4c8bffeacb635e225f",
+                  "technology": "OTHER",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/153b0fe8575ff1a17768319ba6dbaa5c",
+                  "@type": "Dataset",
+                  "label": "Registered 10/7/2021, daniel Cotter, TMC-Stanford",
+                  "description": "Data/Assay Types: CODEX, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/153b0fe8575ff1a17768319ba6dbaa5c",
+                  "technology": "CODEX",
+                  "thumbnail": "assets/icons/ico-spatial-codex.svg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/57288d8a0a9374ea83f90582df8eafa2",
+              "@type": "Dataset",
+              "label": "Registered 4/21/2021, daniel cotter, TMC-Stanford",
+              "description": "Data/Assay Types: snRNAseq, snRNAseq",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/57288d8a0a9374ea83f90582df8eafa2",
+              "technology": "OTHER",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/9c3559f50056d46105184abe93b1808c",
+              "@type": "Dataset",
+              "label": "Registered 6/7/2021, daniel cotter, TMC-Stanford",
+              "description": "Data/Assay Types: snATACseq, snATACseq",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/9c3559f50056d46105184abe93b1808c",
+              "technology": "OTHER",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ],
+          "section_count": 1,
+          "section_size": 5,
+          "section_units": "millimeter",
+          "description": "20 x 50 x 5 millimeter, 5 millimeter, organ_piece, 1 Sections"
+        },
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/aab5a316-7fbc-4a57-8b3a-3fc1958c5292",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0000059",
+              "http://purl.obolibrary.org/obo/UBERON_0001155",
+              "http://purl.obolibrary.org/obo/UBERON_0001158",
+              "http://purl.obolibrary.org/obo/UBERON_0022276"
+            ],
+            "creation_date": "2021-10-19",
+            "creator": "Yiing Lin",
+            "creator_first_name": "Yiing",
+            "creator_last_name": "Lin",
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/aab5a316-7fbc-4a57-8b3a-3fc1958c5292_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2021-10-19",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFColon",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": 245.289,
+              "y_rotation": 90,
+              "y_scaling": 1,
+              "y_translation": 147.807,
+              "z_rotation": 0,
+              "z_scaling": 1,
+              "z_translation": 109.874
+            },
+            "slice_count": 1,
+            "slice_thickness": 1,
+            "x_dimension": 20,
+            "y_dimension": 50,
+            "z_dimension": 5
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/2ef7c7f89e172641c5f7c643d8a9c13d",
+          "label": "Registered 10/19/2021, daniel cotter, TMC-Stanford",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/2ef7c7f89e172641c5f7c643d8a9c13d",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/932a048745b3d30bacd0cfc9ba692136",
+              "@type": "Sample",
+              "label": "Registered 2/12/2021, daniel cotter, TMC-Stanford",
+              "description": "20 x 50 x 1 millimeter, 1 millimeter, organ_piece",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/932a048745b3d30bacd0cfc9ba692136",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/277152f17b5a2f308820ab4d85c5a426",
+                  "@type": "Dataset",
+                  "label": "Registered 4/21/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: salmon_sn_rnaseq_10x, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/277152f17b5a2f308820ab4d85c5a426",
+                  "technology": "10x",
+                  "thumbnail": "assets/icons/ico-bulk-10x.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/9b21d48002e2f02d8654feeb3f0867bd",
+                  "@type": "Dataset",
+                  "label": "Registered 4/22/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: sn_atac_seq, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/9b21d48002e2f02d8654feeb3f0867bd",
+                  "technology": "OTHER",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/684f58929973a6462acf0c1f30904ead",
+                  "@type": "Dataset",
+                  "label": "Registered 10/8/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: codex_cytokit, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/684f58929973a6462acf0c1f30904ead",
+                  "technology": "CODEX",
+                  "thumbnail": "assets/icons/ico-spatial-codex.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/2804c6782b915a31b129ad51535b2317",
+                  "@type": "Dataset",
+                  "label": "Registered 10/25/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: codex_cytokit, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/2804c6782b915a31b129ad51535b2317",
+                  "technology": "CODEX",
+                  "thumbnail": "assets/icons/ico-spatial-codex.svg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/c3d36358b184be55ac977abea5755447",
+              "@type": "Dataset",
+              "label": "Registered 4/21/2021, daniel cotter, TMC-Stanford",
+              "description": "Data/Assay Types: snRNAseq, snRNAseq",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/c3d36358b184be55ac977abea5755447",
+              "technology": "OTHER",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/1956686d45a88c099ef8384ecf9f1329",
+              "@type": "Dataset",
+              "label": "Registered 6/7/2021, daniel cotter, TMC-Stanford",
+              "description": "Data/Assay Types: snATACseq, snATACseq",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/1956686d45a88c099ef8384ecf9f1329",
+              "technology": "OTHER",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/3480cd404d4bacd7bb8d21be8de12c6c",
+              "@type": "Dataset",
+              "label": "Registered 10/24/2021, daniel Cotter, TMC-Stanford",
+              "description": "Data/Assay Types: CODEX, CODEX",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/3480cd404d4bacd7bb8d21be8de12c6c",
+              "technology": "CODEX",
+              "thumbnail": "assets/icons/ico-spatial-codex.svg"
+            }
+          ],
+          "section_count": 1,
+          "section_size": 1,
+          "section_units": "millimeter",
+          "description": "20 x 50 x 5 millimeter, 1 millimeter, organ_piece, 1 Sections"
+        }
+      ]
+    },
+    {
+      "@id": "https://entity.api.hubmapconsortium.org/entities/d3ad6409d2ad37ef7dbcc90ccc199f68",
+      "@type": "Donor",
+      "label": "Male, Age 78, BMI 35.1",
+      "description": "Entered 2/19/2020, Yiing Lin, TMC-Stanford",
+      "link": "https://portal.hubmapconsortium.org/browse/donor/d3ad6409d2ad37ef7dbcc90ccc199f68",
+      "age": 78,
+      "sex": "Male",
+      "bmi": 35.1,
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Stanford",
+      "provider_uuid": "def5fd76-ed43-11e8-b56a-0e8017bdda58",
+      "samples": [
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/3baf4809-eff0-4a0e-8ccb-0d7e6d83f371",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0000059",
+              "http://purl.obolibrary.org/obo/UBERON_0001155",
+              "http://purl.obolibrary.org/obo/UBERON_0001159",
+              "http://purl.obolibrary.org/obo/UBERON_0001158",
+              "http://purl.obolibrary.org/obo/UBERON_0001157",
+              "http://purl.obolibrary.org/obo/UBERON_0001156",
+              "http://purl.obolibrary.org/obo/UBERON_0022277"
+            ],
+            "creation_date": "2021-10-19",
+            "creator": "Yiing Lin",
+            "creator_first_name": "Yiing",
+            "creator_last_name": "Lin",
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/3baf4809-eff0-4a0e-8ccb-0d7e6d83f371_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2021-10-19",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMColon",
+              "translation_units": "millimeter",
+              "x_rotation": 90,
+              "x_scaling": 1,
+              "x_translation": 128.226,
+              "y_rotation": 26,
+              "y_scaling": 1,
+              "y_translation": 354.62,
+              "z_rotation": 88,
+              "z_scaling": 1,
+              "z_translation": 187.504
+            },
+            "slice_count": 1,
+            "slice_thickness": 1,
+            "x_dimension": 20,
+            "y_dimension": 50,
+            "z_dimension": 5
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/abe01e040eecba80c655fbca3aba165a",
+          "label": "Registered 10/19/2021, Yiing Lin, TMC-Stanford",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/abe01e040eecba80c655fbca3aba165a",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/7fd7eedb4f588e7c7da4dbf91024bcab",
+              "@type": "Sample",
+              "label": "Registered 2/15/2021, daniel cotter, TMC-Stanford",
+              "description": "20 x 50 x 1 millimeter, 1 millimeter, organ_piece",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/7fd7eedb4f588e7c7da4dbf91024bcab",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/c4bb21f3b70bd34554f8ae5b557c38d6",
+              "@type": "Sample",
+              "label": "Registered 9/7/2021, daniel cotter, TMC-Stanford",
+              "description": "20 x 50 x 1 millimeter, 1 millimeter, organ_piece",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/c4bb21f3b70bd34554f8ae5b557c38d6",
+              "sample_type": "Tissue Section",
+              "section_number": 2,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/089ebad7c98cebe22f6d97b246fb45c6",
+                  "@type": "Dataset",
+                  "label": "Registered 4/22/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: salmon_sn_rnaseq_10x, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/089ebad7c98cebe22f6d97b246fb45c6",
+                  "technology": "10x",
+                  "thumbnail": "assets/icons/ico-bulk-10x.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/1bea8077006cd5da6e5c1ec892bc4f83",
+                  "@type": "Dataset",
+                  "label": "Registered 10/25/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: codex_cytokit, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/1bea8077006cd5da6e5c1ec892bc4f83",
+                  "technology": "CODEX",
+                  "thumbnail": "assets/icons/ico-spatial-codex.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/ab1dbe2f10a38a2da74a8ffed99ac9d6",
+                  "@type": "Dataset",
+                  "label": "Registered 10/26/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: codex_cytokit, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/ab1dbe2f10a38a2da74a8ffed99ac9d6",
+                  "technology": "CODEX",
+                  "thumbnail": "assets/icons/ico-spatial-codex.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/b22e6449e3de171fdfaefc4a7b5b2aed",
+                  "@type": "Dataset",
+                  "label": "Registered 11/2/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: codex_cytokit, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/b22e6449e3de171fdfaefc4a7b5b2aed",
+                  "technology": "CODEX",
+                  "thumbnail": "assets/icons/ico-spatial-codex.svg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/da93581ef554e25ec1c7a12500a56b74",
+              "@type": "Dataset",
+              "label": "Registered 4/22/2021, daniel cotter, TMC-Stanford",
+              "description": "Data/Assay Types: snRNAseq, snRNAseq",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/da93581ef554e25ec1c7a12500a56b74",
+              "technology": "OTHER",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/98d54824c0eb9843865dfc3a53b4cff4",
+              "@type": "Dataset",
+              "label": "Registered 11/2/2021, daniel Cotter, TMC-Stanford",
+              "description": "Data/Assay Types: CODEX, CODEX",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/98d54824c0eb9843865dfc3a53b4cff4",
+              "technology": "CODEX",
+              "thumbnail": "assets/icons/ico-spatial-codex.svg"
+            }
+          ],
+          "section_count": 1,
+          "section_size": 1,
+          "section_units": "millimeter",
+          "description": "20 x 50 x 5 millimeter, 1 millimeter, organ_piece, 1 Sections"
+        },
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/3c6f0725-dbe0-4245-82c4-1f11f2b72ba0",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0000059",
+              "http://purl.obolibrary.org/obo/UBERON_0001155",
+              "http://purl.obolibrary.org/obo/UBERON_0001159",
+              "http://purl.obolibrary.org/obo/UBERON_0001158",
+              "http://purl.obolibrary.org/obo/UBERON_0022276",
+              "http://purl.obolibrary.org/obo/UBERON_0001157"
+            ],
+            "creation_date": "2021-10-19",
+            "creator": "Yiing Lin",
+            "creator_first_name": "Yiing",
+            "creator_last_name": "Lin",
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/3c6f0725-dbe0-4245-82c4-1f11f2b72ba0_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2021-10-19",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMColon",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": 237.002,
+              "y_rotation": 90,
+              "y_scaling": 1,
+              "y_translation": 257.776,
+              "z_rotation": 0,
+              "z_scaling": 1,
+              "z_translation": 99.434
+            },
+            "slice_count": 1,
+            "slice_thickness": 1,
+            "x_dimension": 20,
+            "y_dimension": 50,
+            "z_dimension": 5
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/a596becf59c13e14a6489fb97fcdd2c9",
+          "label": "Registered 10/19/2021, Yiing Lin, TMC-Stanford",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/a596becf59c13e14a6489fb97fcdd2c9",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/8b675fffca25c82c530bea18d7b6294e",
+              "@type": "Sample",
+              "label": "Registered 2/12/2021, daniel cotter, TMC-Stanford",
+              "description": "20 x 50 x 1 millimeter, 1 millimeter, organ_piece",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/8b675fffca25c82c530bea18d7b6294e",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/4b25513dd7416a43d51ba5c636038284",
+              "@type": "Sample",
+              "label": "Registered 9/7/2021, daniel cotter, TMC-Stanford",
+              "description": "20 x 50 x 1 millimeter, 1 millimeter, organ_piece",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/4b25513dd7416a43d51ba5c636038284",
+              "sample_type": "Tissue Section",
+              "section_number": 2,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/ba3081716f3fa98a1670b0864c5115ff",
+                  "@type": "Dataset",
+                  "label": "Registered 4/21/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: salmon_sn_rnaseq_10x, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/ba3081716f3fa98a1670b0864c5115ff",
+                  "technology": "10x",
+                  "thumbnail": "assets/icons/ico-bulk-10x.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/c62e8e0f3ab247175965c517231fceed",
+                  "@type": "Dataset",
+                  "label": "Registered 4/22/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: sn_atac_seq, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/c62e8e0f3ab247175965c517231fceed",
+                  "technology": "OTHER",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/8a145253deae73e65c0a6da271d06fff",
+                  "@type": "Dataset",
+                  "label": "Registered 9/30/2021, daniel Cotter, TMC-Stanford",
+                  "description": "Data/Assay Types: snRNAseq, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/8a145253deae73e65c0a6da271d06fff",
+                  "technology": "OTHER",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/2db9ee68762ac8df78a649a575964201",
+                  "@type": "Dataset",
+                  "label": "Registered 10/25/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: codex_cytokit, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/2db9ee68762ac8df78a649a575964201",
+                  "technology": "CODEX",
+                  "thumbnail": "assets/icons/ico-spatial-codex.svg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/e18254c67c8a0bb625f3748a2501a0bb",
+              "@type": "Dataset",
+              "label": "Registered 4/21/2021, daniel cotter, TMC-Stanford",
+              "description": "Data/Assay Types: snRNAseq, snRNAseq",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/e18254c67c8a0bb625f3748a2501a0bb",
+              "technology": "OTHER",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/6bc71af5ff714288652e6dd5fad03ddb",
+              "@type": "Dataset",
+              "label": "Registered 6/7/2021, daniel cotter, TMC-Stanford",
+              "description": "Data/Assay Types: snATACseq, snATACseq",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/6bc71af5ff714288652e6dd5fad03ddb",
+              "technology": "OTHER",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/5b8a17e92defe510fa91b3a97a728831",
+              "@type": "Dataset",
+              "label": "Registered 10/24/2021, daniel Cotter, TMC-Stanford",
+              "description": "Data/Assay Types: CODEX, CODEX",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/5b8a17e92defe510fa91b3a97a728831",
+              "technology": "CODEX",
+              "thumbnail": "assets/icons/ico-spatial-codex.svg"
+            }
+          ],
+          "section_count": 1,
+          "section_size": 1,
+          "section_units": "millimeter",
+          "description": "20 x 50 x 5 millimeter, 1 millimeter, organ_piece, 1 Sections"
+        },
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/df58ff32-e4db-41fe-9a25-47dbde90c694",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0000059",
+              "http://purl.obolibrary.org/obo/UBERON_0001155",
+              "http://purl.obolibrary.org/obo/UBERON_0001159",
+              "http://purl.obolibrary.org/obo/UBERON_0001153",
+              "http://purl.obolibrary.org/obo/UBERON_0001052"
+            ],
+            "creation_date": "2021-10-19",
+            "creator": "Yiing Lin",
+            "creator_first_name": "Yiing",
+            "creator_last_name": "Lin",
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/df58ff32-e4db-41fe-9a25-47dbde90c694_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2021-10-19",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMColon",
+              "translation_units": "millimeter",
+              "x_rotation": 90,
+              "x_scaling": 1,
+              "x_translation": 108.484,
+              "y_rotation": 0,
+              "y_scaling": 1,
+              "y_translation": 149.553,
+              "z_rotation": 0,
+              "z_scaling": 1,
+              "z_translation": 92.744
+            },
+            "x_dimension": 20,
+            "y_dimension": 50,
+            "z_dimension": 5
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/1de4ad9bd516660043b8e190e8978045",
+          "label": "Registered 10/19/2021, Yiing Lin, TMC-Stanford",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/1de4ad9bd516660043b8e190e8978045",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/855045d4390dfa55cb95435eb9c3bcd0",
+              "@type": "Sample",
+              "label": "Registered 2/15/2021, daniel cotter, TMC-Stanford",
+              "description": "20 x 50 x 2.5 millimeter, 2.5 millimeter, organ_piece",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/855045d4390dfa55cb95435eb9c3bcd0",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/d2a488545c2cd6dbe2b65361c919114f",
+              "@type": "Sample",
+              "label": "Registered 9/7/2021, daniel cotter, TMC-Stanford",
+              "description": "20 x 50 x 2.5 millimeter, 2.5 millimeter, organ_piece",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/d2a488545c2cd6dbe2b65361c919114f",
+              "sample_type": "Tissue Section",
+              "section_number": 2,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/91822c7d75c54ce838bcd4d77f076b25",
+                  "@type": "Dataset",
+                  "label": "Registered 4/21/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: salmon_sn_rnaseq_10x, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/91822c7d75c54ce838bcd4d77f076b25",
+                  "technology": "10x",
+                  "thumbnail": "assets/icons/ico-bulk-10x.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/06254c0d354ac6af7ea5d73ebc8b7f0c",
+                  "@type": "Dataset",
+                  "label": "Registered 4/22/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: sn_atac_seq, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/06254c0d354ac6af7ea5d73ebc8b7f0c",
+                  "technology": "OTHER",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/79311732345064972104496a6f70459c",
+                  "@type": "Dataset",
+                  "label": "Registered 9/13/2021, daniel cotter, TMC-Stanford",
+                  "description": "Data/Assay Types: snATACseq, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/79311732345064972104496a6f70459c",
+                  "technology": "OTHER",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/077a148008ec97f71c23804327e9ed29",
+                  "@type": "Dataset",
+                  "label": "Registered 10/26/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: codex_cytokit, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/077a148008ec97f71c23804327e9ed29",
+                  "technology": "CODEX",
+                  "thumbnail": "assets/icons/ico-spatial-codex.svg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/492574f47224661fe8674f60373e44f4",
+              "@type": "Dataset",
+              "label": "Registered 4/21/2021, daniel cotter, TMC-Stanford",
+              "description": "Data/Assay Types: snRNAseq, snRNAseq",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/492574f47224661fe8674f60373e44f4",
+              "technology": "OTHER",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/f37a04bbcd5d50c035f85c5802a6c80e",
+              "@type": "Dataset",
+              "label": "Registered 6/7/2021, daniel cotter, TMC-Stanford",
+              "description": "Data/Assay Types: snATACseq, snATACseq",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/f37a04bbcd5d50c035f85c5802a6c80e",
+              "technology": "OTHER",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/e6fd525b837f4cf736c8af830f4f750f",
+              "@type": "Dataset",
+              "label": "Registered 10/25/2021, daniel Cotter, TMC-Stanford",
+              "description": "Data/Assay Types: CODEX, CODEX",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/e6fd525b837f4cf736c8af830f4f750f",
+              "technology": "CODEX",
+              "thumbnail": "assets/icons/ico-spatial-codex.svg"
+            }
+          ],
+          "section_count": 2,
+          "section_size": 2.5,
+          "section_units": "millimeter",
+          "description": "20 x 50 x 5 millimeter, 2.5 millimeter, organ_piece, 2 Sections"
+        },
+        {
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/37248725-6ed5-4589-ac5a-9951d1a783e7",
+            "@type": "SpatialEntity",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0000059",
+              "http://purl.obolibrary.org/obo/UBERON_0001155",
+              "http://purl.obolibrary.org/obo/UBERON_0001159",
+              "http://purl.obolibrary.org/obo/UBERON_0001158",
+              "http://purl.obolibrary.org/obo/UBERON_0001157",
+              "http://purl.obolibrary.org/obo/UBERON_0001156",
+              "http://purl.obolibrary.org/obo/UBERON_0001153",
+              "http://purl.obolibrary.org/obo/UBERON_0022277"
+            ],
+            "creation_date": "2021-10-19",
+            "creator": "Yiing Lin",
+            "creator_first_name": "Yiing",
+            "creator_last_name": "Lin",
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/37248725-6ed5-4589-ac5a-9951d1a783e7_placement",
+              "@type": "SpatialPlacement",
+              "placement_date": "2021-10-19",
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "scaling_units": "ratio",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMColon",
+              "translation_units": "millimeter",
+              "x_rotation": 0,
+              "x_scaling": 1,
+              "x_translation": 13.723,
+              "y_rotation": 90,
+              "y_scaling": 1,
+              "y_translation": 244.694,
+              "z_rotation": 0,
+              "z_scaling": 1,
+              "z_translation": 134.52
+            },
+            "slice_count": 1,
+            "slice_thickness": 1,
+            "x_dimension": 20,
+            "y_dimension": 50,
+            "z_dimension": 5
+          },
+          "@id": "https://entity.api.hubmapconsortium.org/entities/2c4ed25579a369af5ae8f7523038235f",
+          "label": "Registered 10/19/2021, Yiing Lin, TMC-Stanford",
+          "link": "https://portal.hubmapconsortium.org/browse/sample/2c4ed25579a369af5ae8f7523038235f",
+          "sections": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/edd2898e222ee5103b97084e3a528fd8",
+              "@type": "Sample",
+              "label": "Registered 2/15/2021, daniel cotter, TMC-Stanford",
+              "description": "20 x 50 x 1 millimeter, 1 millimeter, organ_piece",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/edd2898e222ee5103b97084e3a528fd8",
+              "sample_type": "Tissue Section",
+              "section_number": 1,
+              "samples": [],
+              "datasets": []
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/450e073aab976738e7cd478063b5a93d",
+              "@type": "Sample",
+              "label": "Registered 9/7/2021, daniel cotter, TMC-Stanford",
+              "description": "20 x 50 x 1 millimeter, 1 millimeter, organ_piece",
+              "link": "https://portal.hubmapconsortium.org/browse/sample/450e073aab976738e7cd478063b5a93d",
+              "sample_type": "Tissue Section",
+              "section_number": 2,
+              "samples": [],
+              "datasets": [
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/04968c1fe0149ee367b0e53af55763e4",
+                  "@type": "Dataset",
+                  "label": "Registered 4/21/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: salmon_sn_rnaseq_10x, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/04968c1fe0149ee367b0e53af55763e4",
+                  "technology": "10x",
+                  "thumbnail": "assets/icons/ico-bulk-10x.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/7f90e8096c701c2025c744f82f1d2600",
+                  "@type": "Dataset",
+                  "label": "Registered 4/22/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: sn_atac_seq, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/7f90e8096c701c2025c744f82f1d2600",
+                  "technology": "OTHER",
+                  "thumbnail": "assets/icons/ico-unknown.svg"
+                },
+                {
+                  "@id": "https://entity.api.hubmapconsortium.org/entities/d6585307bdd7e619910ef92c0fe51921",
+                  "@type": "Dataset",
+                  "label": "Registered 10/26/2021, HuBMAP Process, TMC-Stanford",
+                  "description": "Data/Assay Types: codex_cytokit, ",
+                  "link": "https://portal.hubmapconsortium.org/browse/dataset/d6585307bdd7e619910ef92c0fe51921",
+                  "technology": "CODEX",
+                  "thumbnail": "assets/icons/ico-spatial-codex.svg"
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/f1937797246fa4592bff6166d7666de5",
+              "@type": "Dataset",
+              "label": "Registered 4/21/2021, daniel cotter, TMC-Stanford",
+              "description": "Data/Assay Types: snRNAseq, snRNAseq",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/f1937797246fa4592bff6166d7666de5",
+              "technology": "OTHER",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/889cc388af2a79caa599432b0d6318c5",
+              "@type": "Dataset",
+              "label": "Registered 6/7/2021, daniel cotter, TMC-Stanford",
+              "description": "Data/Assay Types: snATACseq, snATACseq",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/889cc388af2a79caa599432b0d6318c5",
+              "technology": "OTHER",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            },
+            {
+              "@id": "https://entity.api.hubmapconsortium.org/entities/c5334b682758b141c481f87ae010b537",
+              "@type": "Dataset",
+              "label": "Registered 10/25/2021, daniel Cotter, TMC-Stanford",
+              "description": "Data/Assay Types: CODEX, CODEX",
+              "link": "https://portal.hubmapconsortium.org/browse/dataset/c5334b682758b141c481f87ae010b537",
+              "technology": "CODEX",
+              "thumbnail": "assets/icons/ico-spatial-codex.svg"
+            }
+          ],
+          "section_count": 1,
+          "section_size": 1,
+          "section_units": "millimeter",
+          "description": "20 x 50 x 5 millimeter, 1 millimeter, organ_piece, 1 Sections"
+        }
+      ]
+    }
+  ]
+}

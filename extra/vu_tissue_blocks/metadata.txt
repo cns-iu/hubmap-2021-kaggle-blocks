@@ -1,0 +1,524 @@
+﻿UUID: VAN0016-LK-202-89   VAN0016-LK-202-89_HBM264.XSVF.528
+Patient #: XXXX
+Internal #: YYYY
+A, S, R: 56, M, W
+Laterality: Left
+(Right, Left)
+Anatomical Location: ZZZ
+(U, M, L, N/A)
+Dimensions: 32x23x4
+(in mm)
+Distance from Tumor: 5
+(in cm)
+Image: 
+
+________________
+UUID: VAN0010-LK-160-2   VAN0010-LK-160-2_HBM833.DBGG.252
+Patient #: 67112
+Internal #: 92
+A, S, R: 56, M, W
+Laterality: Left
+(Right, Left)
+Anatomical Location: Lower
+(U, M, L, N/A)
+Dimensions: 35x19x3
+(in mm)
+Distance from Tumor: 5
+(in cm)
+Image: 
+  
+________________
+UUID: VAN0011-RK-8-2      VAN0011-RK-8-2_HBM783.GJWP.694
+Patient #: 67177
+Internal #: 95
+A, S, R: 31, M, W
+Laterality: R
+(Right, Left)
+Anatomical Location: Lower
+(U, M, L, N/A)
+Dimensions: 25x15x4
+(in mm)
+Distance from Tumor: N/A
+(in cm)
+Image: 
+  
+
+________________
+UUID: VAN0013-LK-206-2    VAN0013-LK-206-2_HBM623.RPMC.638
+Patient #: 68304
+Internal #: 125
+A, S, R: 61, F, W
+Laterality: Left
+(Right, Left)
+Anatomical Location: Lower
+(U, M, L, N/A)
+Dimensions: 17 x 16 x 4 
+(in mm)
+Distance from Tumor: N/A
+(in cm)
+Image:
+  
+
+UUID: VAN0014-LK-207-2   VAN0014-LK-207-2_HBM276.PGFS.693
+Patient #: 68555
+Internal #: 130
+A, S, R: 76, F, W
+Laterality: Left
+(Right, Left)
+Anatomical Location: Lower
+(U, M, L, N/A)
+Dimensions: 20 x 14 x 5
+(in mm)
+Distance from Tumor: N/A
+(in cm)
+Image:
+  
+
+UUID: VAN0016-LK-208-2    VAN0016-LK-208-2_HBM676.SNVK.793
+Patient #: 66999
+Internal #: 133
+A, S, R: 56, M, W 
+Laterality: Left
+(Right, Left)
+Anatomical Location: Upper
+(U, M, L, N/A)
+Dimensions: 33 x 23 x 4
+(in mm)
+Distance from Tumor: 3
+(in cm)
+Image:
+  
+________________
+
+UUID: VAN0006-LK-4-33   VAN0006-LK-4-33_HBM984.PMZN.942
+Patient #: 68555
+Internal #: 110
+A, S, R: 76, F, W
+Laterality: Left
+(Right, Left)
+Anatomical Location: Upper
+(U, M, L, N/A)
+Dimensions: 20 x 14 x 5
+(in mm)
+Distance from Tumor: N/A
+(in cm)
+Image:
+  
+________________
+
+UUID: VAN0010-LK-152-162   VAN0010-LK-152-162_HBM649.DLZF.463
+Patient #: 67112
+Internal #: 89
+A, S, R: 56, M, W
+Laterality: Left
+(Right, Left)
+Anatomical Location: Lower
+(U, M, L, N/A)
+Dimensions: 25x10x4
+(in mm)
+Distance from Tumor: 3
+(in cm)
+Image:
+  
+________________
+
+UUID: VAN0029-RK-2-80     VAN0029-RK-2-80_HBM344.LLLV.539
+Patient #: 69677
+Internal #: 154
+A, S, R: 62, M, W
+Laterality: Right
+(Right, Left)
+Anatomical Location: Lower
+(U, M, L, N/A)
+Dimensions: 24 x 13 x 6
+(in mm)
+Distance from Tumor: 5
+(in cm)
+Image:
+  
+________________
+
+UUID: VAN0031-LK-2-58      VAN0031-LK-2-58_HBM673.JJRZ.435
+Patient #: 70194
+Internal #: 162
+A, S, R: 77, F, W
+Laterality: Left
+(Right, Left)
+Anatomical Location: Lower
+(U, M, L, N/A)
+Dimensions: 13 x 12 x 11
+(in mm)
+Distance from Tumor: N/A
+(in cm)
+Image:
+  
+________________
+
+UUID: VAN0032-RK-4-5     VAN0032-RK-4-5_HBM227.THVC.544
+Patient #: 70287
+Internal #: 164
+A, S, R: 66, M, W
+Laterality: Right
+(Right, Left)
+Anatomical Location: Lower
+(U, M, L, N/A)
+Dimensions: 10 x 10 x 12
+(in mm)
+Distance from Tumor: N/A
+(in cm)
+Image:
+  
+________________
+
+UUID: VAN0032-RK-5-6   VAN0032-RK-5-6_HBM627.RSGW.898
+Patient #: 70287 
+Internal #: 165
+A, S, R: 66, M, W
+Laterality: Right
+(Right, Left)
+Anatomical Location: Lower
+(U, M, L, N/A)
+Dimensions: 16 x 14 x 14
+(in mm)
+Distance from Tumor: N/A
+(in cm)
+Image:
+  
+________________
+
+UUID: VAN0034-RK-4-7    VAN0034-RK-4-7_HBM832.FQKR.463
+Patient #: 71354
+Internal #: 173
+A, S, R: 57, F, W
+Laterality: Right
+(Right, Left)
+Anatomical Location: Lower
+(U, M, L, N/A)
+Dimensions: 19x20x11
+(in mm)
+Distance from Tumor: N/A
+(in cm)
+Image:
+  
+________________
+
+UUID: VAN0034-RK-5-5    VAN0034-RK-5-5_HBM649.XFQG.775
+Patient #: 71354
+Internal #: 170
+A, S, R: 57, F, W
+Laterality: Right
+(Right, Left)
+Anatomical Location: Lower
+(U, M, L, N/A)
+Dimensions: 25x17x5
+(in mm)
+Distance from Tumor: N/A
+(in cm)
+Image:
+  
+
+UUID: VAN0034-RK-6-5  VAN0034-RK-6-5_HBM296.RLWW.755
+Patient #: 71354 
+Internal #: 171 
+A, S, R: 57, F, W
+Laterality: Right
+(Right, Left)
+Anatomical Location: Lower
+(U, M, L, N/A)
+Dimensions: 26x12x9 
+(in mm)
+Distance from Tumor: N/A
+(in cm)
+Image:
+  
+________________
+
+UUID: VAN0034-RK-7-7    VAN0034-RK-7-7_HBM324.ZGZM.874
+Patient #: 71354
+Internal #: 172 
+A, S, R: 57, F, W
+Laterality: Right
+(Right, Left)
+Anatomical Location: Lower
+
+
+Dimensions: 23x18x10
+(in mm)
+Distance from Tumor: N/A
+(in cm)
+Image:
+
+________________
+
+﻿UUID:  VAN0003-LK-33-2    VAN0003-LK-33-2_HBM875.QHDJ.259
+Patient #:  65631
+Internal #:  71  (FFPE)
+A/S/R:  73/F/W
+Laterality:  Left
+(Right, Left)
+Anatomical Location:  Upper
+(U, M, L, N/A)
+Dimensions:  24 x 20 x 7
+(in mm)
+Distance from Tumor:  7
+(in cm)
+Image:
+ Map
+
+Description automatically generated 
+
+________________
+
+
+UUID:  VAN0005-RK-1-1    VAN0005-RK-1-1_HBM463.JRTB.582
+Patient #:  67347
+Internal #:  103
+A/S/R:  58/F/W
+Laterality:  Right
+(Right, Left)
+Anatomical Location:  Lower
+(U, M, L, N/A)
+Dimensions:  25 x 15 x 6
+(in mm)
+Distance from Tumor:  N/A
+(in cm)
+Image:
+ A picture containing underpants
+
+Description automatically generated 
+
+________________
+
+
+UUID:  VAN0005-RK-4-172  VAN0005-RK-4-172_HBM958.GHFM.676
+Patient #:  67347
+Internal #:  106
+A/S/R:  58/F/W
+Laterality:  Right
+(Right, Left)
+Anatomical Location:  Lower
+(U, M, L, N/A)
+Dimensions:  28 x 17 x 2
+(in mm)
+Distance from Tumor:  N/A
+(in cm)
+Image:
+ Map
+
+Description automatically generated 
+________________
+
+UUID:  VAN0005-RK-8-2  VAN0005-RK-8-2_HBM636.ZPTS.368
+Patient #:  67347
+Internal #:  106 (FFPE)
+A/S/R:  58/F/W
+Laterality:  Right
+(Right, Left)
+Anatomical Location:  Lower
+(U, M, L, N/A)
+Dimensions:  28 x 17 x 2
+(in mm)
+Distance from Tumor:  N/A
+(in cm)
+Image:
+ Background pattern
+
+Description automatically generated 
+
+________________
+
+
+UUID:  VAN0006-LK-2-85  VAN0006-LK-2-85_HBM725.PDDC.788
+Patient #:  67548
+Internal #:  108
+A/S/R:  58/M/B
+Laterality:  Left
+(Right, Left)
+Anatomical Location:  Upper
+(U, M, L, N/A)
+Dimensions:  18 x 10 x 2
+(in mm)
+Distance from Tumor:  N/A
+(in cm)
+Image:
+  
+________________
+
+UUID:  VAN0006-LK-7-2  VAN0006-LK-7-2_HBM636.GVWP.354
+Patient #:  67548
+Internal #:  108  (FFPE)
+A/S/R:  58/M/B
+Laterality:  Left
+(Right, Left)
+Anatomical Location:  Upper
+(U, M, L, N/A)
+Dimensions:  18 x 10 x 2
+(in mm)
+Distance from Tumor:  N/A
+(in cm)
+Image:
+ A picture containing map
+
+Description automatically generated 
+________________
+
+UUID:  VAN0007-LK-203-103   VAN0007-LK-203-103_HBM362.PTQJ.743
+Patient #:  68138
+Internal #:  118
+A/S/R:  66/F/W
+Laterality:  Left
+(Right, Left)
+Anatomical Location:  Lower
+(U, M, L, N/A)
+Dimensions:  20 x 15 x 4
+(in mm)
+Distance from Tumor:  N/A
+(in cm)
+Image:
+  
+________________
+
+UUID:  VAN0008-RK-403-100  VAN0008-RK-403-100_HBM783.GDKK.879
+Patient #:  63921
+Internal #:  43
+A/S/R:  48/M/W
+Laterality:  Right
+(Right, Left)
+Anatomical Location:  Lower
+(U, M, L, N/A)
+Dimensions:  15 x 10 x 10
+(in mm)
+Distance from Tumor:  4
+(in cm)
+Image:
+  
+________________
+
+UUID:  VAN0009-LK-102-7   VAN0009-LK-102-7_HBM389.MBWW.346
+Patient #:  67026
+Internal #:  85
+A/S/R:  53/M/B
+Laterality:  Left
+(Right, Left)
+Anatomical Location:   Lower
+(U, M, L, N/A)
+Dimensions:  20 x 8 x 4
+(in mm)
+Distance from Tumor:  3.5
+(in cm)
+Image:
+ Background pattern
+
+Description automatically generated 
+________________
+
+UUID:  VAN0009-LK-106-2  VAN0009-LK-106-2_HBM879.CDHB.995
+Patient #:  67026
+Internal #:  85  (FFPE)
+A/S/R:  53/M/B
+Laterality:  Left
+(Right, Left)
+Anatomical Location:   Lower
+(U, M, L, N/A)
+Dimensions:  20 x 8 x 4
+(in mm)
+Distance from Tumor:  3.5
+(in cm)
+Image:
+
+
+ A picture containing underpants
+
+Description automatically generated 
+________________
+
+UUID:  VAN0010-LK-155-40  VAN0010-LK-155-40_HBM662.PMPZ.644
+Patient #:  67112
+Internal #:  92
+A/S/R:  56/M/W
+Laterality:  Left
+(Right, Left)
+Anatomical Location:  Lower
+(U, M, L, N/A)
+Dimensions:  35 x 19 x 3
+(in mm)
+Distance from Tumor:  5
+(in cm)
+Image:
+
+
+  
+
+________________
+
+
+UUID:  VAN0012-RK-103-75  VAN0012-RK-103-75_HBM874.RZDW.757
+Patient #:  68250
+Internal #:  122
+A/S/R:  44/F/W
+Laterality:  Right
+(Right, Left)
+Anatomical Location:  Lower
+(U, M, L, N/A)
+Dimensions:  17 x 18 x 3
+(in mm)
+Distance from Tumor:  N/A
+(in cm)
+Image:
+
+
+  
+________________
+
+UUID:  VAN0013-LK-202-96  VAN0013-LK-202-96_HBM849.XMPC.398
+Patient #:  68304
+Internal #:  125
+A/S/R:  61/F/W
+Laterality:  Left
+(Right, Left)
+Anatomical Location:  Lower
+(U, M, L, N/A)
+Dimensions:  19 x 15 x 3
+(in mm)
+Distance from Tumor:  N/A
+(in cm)
+Image:
+  
+________________
+
+UUID:  VAN0014-LK-203-108  VAN0014-LK-203-108_HBM979.HDZH.896
+Patient #:  68555
+Internal #:  130
+A/S/R:  76/F/W
+Laterality:  Left
+(Right, Left)
+Anatomical Location:  Lower
+(U, M, L, N/A)
+Dimensions:  20 x 14 x 5
+(in mm)
+Distance from Tumor:   N/A
+(in cm)
+Image:
+ Map
+
+Description automatically generated 
+________________
+
+UUID:  VAN0016-LK-202-89   VAN0016-LK-202-89_HBM264.XSVF.528
+Patient #:  66999
+Internal #:  133
+A/S/R:  56/M/W
+Laterality:  Left
+(Right, Left)
+Anatomical Location:  Upper
+(U, M, L, N/A)
+Dimensions:  33 x 23 x 4
+(in mm)
+Distance from Tumor: 3
+(in cm)
+Image:
+
+
+ A picture containing background pattern
+
+Description automatically generated

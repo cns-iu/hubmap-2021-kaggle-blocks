@@ -1,0 +1,2480 @@
+{
+  "@context": {
+    "@base": "http://purl.org/ccf/latest/ccf-entity.owl#",
+    "@vocab": "http://purl.org/ccf/latest/ccf-entity.owl#",
+    "ccf": "http://purl.org/ccf/latest/ccf.owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label",
+    "description": "rdfs:comment",
+    "link": {
+      "@id": "rdfs:seeAlso",
+      "@type": "@id"
+    },
+    "samples": {
+      "@reverse": "has_donor"
+    },
+    "sections": {
+      "@id": "has_tissue_section",
+      "@type": "@id"
+    },
+    "datasets": {
+      "@id": "has_dataset",
+      "@type": "@id"
+    },
+    "rui_location": {
+      "@id": "has_spatial_entity",
+      "@type": "@id"
+    },
+    "ontologyTerms": {
+      "@id": "has_ontology_term",
+      "@type": "@id"
+    },
+    "thumbnail": {
+      "@id": "has_thumbnail"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM264.XSVF.528#Donor",
+      "@type": "Donor",
+      "label": "Male, Age 56",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM264.XSVF.528",
+      "age": 56,
+      "sex": "Male",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM264.XSVF.528#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM264.XSVF.528",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/2a1ab5bf-690b-4a95-905a-fe5e279cdfd2",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 33,
+            "y_dimension": 23,
+            "z_dimension": 4,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/2a1ab5bf-690b-4a95-905a-fe5e279cdfd2_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -41,
+              "y_rotation": 32,
+              "z_rotation": 43,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 21.557,
+              "y_translation": 134.43,
+              "z_translation": 21.555,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM264.XSVF.528#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM264.XSVF.528",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM833.DBGG.252#Donor",
+      "@type": "Donor",
+      "label": "Male, Age 56",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM833.DBGG.252",
+      "age": 56,
+      "sex": "Male",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM833.DBGG.252#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM833.DBGG.252",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/b7217ff4-bc2a-4bbc-aa35-3167bc1188b0",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001223",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 35,
+            "y_dimension": 19,
+            "z_dimension": 3,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/b7217ff4-bc2a-4bbc-aa35-3167bc1188b0_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -42,
+              "y_rotation": 24,
+              "z_rotation": 26,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 49.35,
+              "y_translation": 50.696,
+              "z_translation": 67.555,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM833.DBGG.252#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM833.DBGG.252",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM783.GJWP.694#Donor",
+      "@type": "Donor",
+      "label": "Male, Age 31",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM783.GJWP.694",
+      "age": 31,
+      "sex": "Male",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM783.GJWP.694#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM783.GJWP.694",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/f4e103d8-cdcd-4f85-b609-c2041e5270b7",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "x_dimension": 25,
+            "y_dimension": 15,
+            "z_dimension": 4,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/f4e103d8-cdcd-4f85-b609-c2041e5270b7_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMRightKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -35,
+              "y_rotation": -22,
+              "z_rotation": -63,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 13.039,
+              "y_translation": 14.329,
+              "z_translation": 51.177,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM783.GJWP.694#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM783.GJWP.694",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM623.RPMC.638#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 61",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM623.RPMC.638",
+      "age": 61,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM623.RPMC.638#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM623.RPMC.638",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/7469777e-0339-4515-b10b-f3401c0d7d49",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 17,
+            "y_dimension": 16,
+            "z_dimension": 4,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/7469777e-0339-4515-b10b-f3401c0d7d49_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFLeftKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -44,
+              "y_rotation": 35,
+              "z_rotation": -27,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 52.273,
+              "y_translation": 5.91,
+              "z_translation": 61.782,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM623.RPMC.638#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM623.RPMC.638",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM276.PGFS.693#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 76",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM276.PGFS.693",
+      "age": 76,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM276.PGFS.693#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM276.PGFS.693",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/4cea9d8c-ae29-4503-b8d6-b48699aae9aa",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 20,
+            "y_dimension": 14,
+            "z_dimension": 5,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/4cea9d8c-ae29-4503-b8d6-b48699aae9aa_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFLeftKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -38,
+              "y_rotation": 38,
+              "z_rotation": -125,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 49.775,
+              "y_translation": 9.576,
+              "z_translation": 61.782,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM276.PGFS.693#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM276.PGFS.693",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM676.SNVK.793#Donor",
+      "@type": "Donor",
+      "label": "Male, Age 56",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM676.SNVK.793",
+      "age": 56,
+      "sex": "Male",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM676.SNVK.793#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM676.SNVK.793",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/a816a000-d172-47b3-95d2-d0de21399b49",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 33,
+            "y_dimension": 23,
+            "z_dimension": 4,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/a816a000-d172-47b3-95d2-d0de21399b49_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -38,
+              "y_rotation": 29,
+              "z_rotation": 15,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 33.816,
+              "y_translation": 136.106,
+              "z_translation": 16.055,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM676.SNVK.793#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM676.SNVK.793",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM984.PMZN.942#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 76",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM984.PMZN.942",
+      "age": 76,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM984.PMZN.942#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM984.PMZN.942",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/dcdfd38f-6b74-4953-bf3c-b86a9313bb36",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 20,
+            "y_dimension": 14,
+            "z_dimension": 5,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/dcdfd38f-6b74-4953-bf3c-b86a9313bb36_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFLeftKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -33,
+              "y_rotation": 37,
+              "z_rotation": 66,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 29.614,
+              "y_translation": 95.776,
+              "z_translation": 12.282,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM984.PMZN.942#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM984.PMZN.942",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM649.DLZF.463#Donor",
+      "@type": "Donor",
+      "label": "Male, Age 56",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM649.DLZF.463",
+      "age": 56,
+      "sex": "Male",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM649.DLZF.463#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM649.DLZF.463",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/a7ad4dd8-2d6f-413f-bf74-d86eaaff28e0",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 25,
+            "y_dimension": 10,
+            "z_dimension": 4,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/a7ad4dd8-2d6f-413f-bf74-d86eaaff28e0_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -35,
+              "y_rotation": 31,
+              "z_rotation": 46,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 57.635,
+              "y_translation": 54.629,
+              "z_translation": 63.555,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM649.DLZF.463#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM649.DLZF.463",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM344.LLLV.539#Donor",
+      "@type": "Donor",
+      "label": "Male, Age 62",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM344.LLLV.539",
+      "age": 62,
+      "sex": "Male",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM344.LLLV.539#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM344.LLLV.539",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/0e5368d8-713f-4d68-8803-8a929075fc59",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0001222",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "x_dimension": 24,
+            "y_dimension": 13,
+            "z_dimension": 6,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/0e5368d8-713f-4d68-8803-8a929075fc59_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMRightKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -38,
+              "y_rotation": -25,
+              "z_rotation": -18,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 29.785,
+              "y_translation": 9.754,
+              "z_translation": 65.677,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM344.LLLV.539#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM344.LLLV.539",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM673.JJRZ.435#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 77",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM673.JJRZ.435",
+      "age": 77,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM673.JJRZ.435#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM673.JJRZ.435",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/db36085f-35c8-4191-8aab-778d142e1bea",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 13,
+            "y_dimension": 12,
+            "z_dimension": 11,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/db36085f-35c8-4191-8aab-778d142e1bea_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFLeftKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -46,
+              "y_rotation": 41,
+              "z_rotation": 0,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 53.985,
+              "y_translation": 12.422,
+              "z_translation": 51.282,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM673.JJRZ.435#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM673.JJRZ.435",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM227.THVC.544#Donor",
+      "@type": "Donor",
+      "label": "Male, Age 66",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM227.THVC.544",
+      "age": 66,
+      "sex": "Male",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM227.THVC.544#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM227.THVC.544",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/7e7c2eae-b014-419b-91de-2b9305fec1ef",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "x_dimension": 10,
+            "y_dimension": 10,
+            "z_dimension": 12,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/7e7c2eae-b014-419b-91de-2b9305fec1ef_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMRightKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -89,
+              "y_rotation": -134,
+              "z_rotation": 43,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 17.881,
+              "y_translation": 14.176,
+              "z_translation": 51.177,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM227.THVC.544#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM227.THVC.544",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM627.RSGW.898#Donor",
+      "@type": "Donor",
+      "label": "Male, Age 66",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM627.RSGW.898",
+      "age": 66,
+      "sex": "Male",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM627.RSGW.898#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM627.RSGW.898",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/ad0a96c7-3f22-402e-a8c0-349f15bef422",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0001222",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "x_dimension": 16,
+            "y_dimension": 14,
+            "z_dimension": 14,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/ad0a96c7-3f22-402e-a8c0-349f15bef422_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMRightKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -30,
+              "y_rotation": -30,
+              "z_rotation": -42,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 44.375,
+              "y_translation": 14.024,
+              "z_translation": 65.677,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM627.RSGW.898#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM627.RSGW.898",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM832.FQKR.463#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 57",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM832.FQKR.463",
+      "age": 57,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM832.FQKR.463#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM832.FQKR.463",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/ec9ffc14-5587-488f-9688-037498d33d68",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "x_dimension": 19,
+            "y_dimension": 20,
+            "z_dimension": 11,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/ec9ffc14-5587-488f-9688-037498d33d68_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFRightKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -46,
+              "y_rotation": -22,
+              "z_rotation": 27,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 13.767,
+              "y_translation": 14.113,
+              "z_translation": 46.989,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM832.FQKR.463#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM832.FQKR.463",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM649.XFQG.775#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 57",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM649.XFQG.775",
+      "age": 57,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM649.XFQG.775#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM649.XFQG.775",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/871812e8-8b4e-48c2-bcca-a8ab8d3b4de8",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0008716",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001228",
+              "http://purl.obolibrary.org/obo/UBERON_0006517",
+              "http://purl.obolibrary.org/obo/UBERON_0001227",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "x_dimension": 25,
+            "y_dimension": 17,
+            "z_dimension": 5,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/871812e8-8b4e-48c2-bcca-a8ab8d3b4de8_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFRightKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -42,
+              "y_rotation": -24,
+              "z_rotation": 4,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 17.948,
+              "y_translation": 14.28,
+              "z_translation": 50.989,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM649.XFQG.775#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM649.XFQG.775",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM296.RLWW.755#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 57",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM296.RLWW.755",
+      "age": 57,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM296.RLWW.755#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM296.RLWW.755",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/63586cd5-175f-4fce-b9ce-31c96552e3b3",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "x_dimension": 26,
+            "y_dimension": 12,
+            "z_dimension": 9,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/63586cd5-175f-4fce-b9ce-31c96552e3b3_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFRightKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -46,
+              "y_rotation": -27,
+              "z_rotation": -84,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 13.873,
+              "y_translation": 20.313,
+              "z_translation": 36.989,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM296.RLWW.755#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM296.RLWW.755",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM324.ZGZM.874#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 57",
+      "description": "Entered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM324.ZGZM.874",
+      "age": 57,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM324.ZGZM.874#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM324.ZGZM.874",
+          "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/fdb7f51d-2b7a-4cdd-b9dd-54f992aebe22",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-11-01",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "x_dimension": 23,
+            "y_dimension": 18,
+            "z_dimension": 10,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/fdb7f51d-2b7a-4cdd-b9dd-54f992aebe22_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFRightKidney",
+              "placement_date": "2021-11-01",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -49,
+              "y_rotation": -19,
+              "z_rotation": -55,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 18.93,
+              "y_translation": 13.932,
+              "z_translation": 48.989,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM324.ZGZM.874#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-11-01, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM324.ZGZM.874",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM875.QHDJ.259#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 73",
+      "description": "Entered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM875.QHDJ.259",
+      "age": 73,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM875.QHDJ.259#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM875.QHDJ.259",
+          "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/cb8de5c6-81fb-427c-ad37-1d9631a98496",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-10-31",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 24,
+            "y_dimension": 20,
+            "z_dimension": 7,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/cb8de5c6-81fb-427c-ad37-1d9631a98496_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFLeftKidney",
+              "placement_date": "2021-10-31",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -35,
+              "y_rotation": 35,
+              "z_rotation": 46,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 12.184,
+              "y_translation": 99.485,
+              "z_translation": 25.282,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM875.QHDJ.259#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM875.QHDJ.259",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM463.JRTB.582#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 58",
+      "description": "Entered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM463.JRTB.582",
+      "age": 58,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM463.JRTB.582#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM463.JRTB.582",
+          "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/4bedfd07-02af-4fdf-ae76-5a5a2de1a5b8",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-10-31",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "x_dimension": 25,
+            "y_dimension": 15,
+            "z_dimension": 6,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/4bedfd07-02af-4fdf-ae76-5a5a2de1a5b8_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFRightKidney",
+              "placement_date": "2021-10-31",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -50,
+              "y_rotation": -28,
+              "z_rotation": -49,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 21.075,
+              "y_translation": 11.686,
+              "z_translation": 55.489,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM463.JRTB.582#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM463.JRTB.582",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM958.GHFM.676#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 58",
+      "description": "Entered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM958.GHFM.676",
+      "age": 58,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM958.GHFM.676#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM958.GHFM.676",
+          "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/624e2292-17d4-4a72-a544-f329d9116446",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-10-31",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0006517",
+              "http://purl.obolibrary.org/obo/UBERON_0001227",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "x_dimension": 28,
+            "y_dimension": 17,
+            "z_dimension": 2,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/624e2292-17d4-4a72-a544-f329d9116446_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFRightKidney",
+              "placement_date": "2021-10-31",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -47,
+              "y_rotation": -24,
+              "z_rotation": 147,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 22.415,
+              "y_translation": 16.349,
+              "z_translation": 58.989,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM958.GHFM.676#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM958.GHFM.676",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM636.ZPTS.368#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 58",
+      "description": "Entered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM636.ZPTS.368",
+      "age": 58,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM636.ZPTS.368#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM636.ZPTS.368",
+          "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/05dbc7c6-6d74-4e82-bae9-81f62dd0ec7c",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-10-31",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "x_dimension": 28,
+            "y_dimension": 17,
+            "z_dimension": 2,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/05dbc7c6-6d74-4e82-bae9-81f62dd0ec7c_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFRightKidney",
+              "placement_date": "2021-10-31",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -49,
+              "y_rotation": -21,
+              "z_rotation": -32,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 22.723,
+              "y_translation": 13.704,
+              "z_translation": 58.489,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM636.ZPTS.368#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM636.ZPTS.368",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM725.PDDC.788#Donor",
+      "@type": "Donor",
+      "label": "Male, Age 58",
+      "description": "Entered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM725.PDDC.788",
+      "age": 58,
+      "sex": "Male",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM725.PDDC.788#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM725.PDDC.788",
+          "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/e07048ce-5076-46f8-b2f5-9648861c232f",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-10-31",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 18,
+            "y_dimension": 10,
+            "z_dimension": 2,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/e07048ce-5076-46f8-b2f5-9648861c232f_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney",
+              "placement_date": "2021-10-31",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -38,
+              "y_rotation": 27,
+              "z_rotation": 54,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 24.208,
+              "y_translation": 138.908,
+              "z_translation": 17.555,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM725.PDDC.788#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM725.PDDC.788",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM636.GVWP.354#Donor",
+      "@type": "Donor",
+      "label": "Male, Age 58",
+      "description": "Entered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM636.GVWP.354",
+      "age": 58,
+      "sex": "Male",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM636.GVWP.354#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM636.GVWP.354",
+          "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/371f55a5-e3b0-49be-9391-ef5af3fad512",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-10-31",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 18,
+            "y_dimension": 10,
+            "z_dimension": 2,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/371f55a5-e3b0-49be-9391-ef5af3fad512_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney",
+              "placement_date": "2021-10-31",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -39,
+              "y_rotation": 29,
+              "z_rotation": 44,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 29.646,
+              "y_translation": 138.435,
+              "z_translation": 15.555,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM636.GVWP.354#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM636.GVWP.354",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM362.PTQJ.743#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 66",
+      "description": "Entered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM362.PTQJ.743",
+      "age": 66,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM362.PTQJ.743#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM362.PTQJ.743",
+          "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/5d59eca6-c0eb-482b-8867-f2354722802b",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-10-31",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 20,
+            "y_dimension": 15,
+            "z_dimension": 4,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/5d59eca6-c0eb-482b-8867-f2354722802b_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFLeftKidney",
+              "placement_date": "2021-10-31",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -38,
+              "y_rotation": 37,
+              "z_rotation": 58,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 57.393,
+              "y_translation": 11.154,
+              "z_translation": 62.782,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM362.PTQJ.743#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM362.PTQJ.743",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM783.GDKK.879#Donor",
+      "@type": "Donor",
+      "label": "Male, Age 48",
+      "description": "Entered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM783.GDKK.879",
+      "age": 48,
+      "sex": "Male",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM783.GDKK.879#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM783.GDKK.879",
+          "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/c66ce47c-56c3-4a9a-873d-f73b9f242a56",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-10-31",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "x_dimension": 15,
+            "y_dimension": 10,
+            "z_dimension": 10,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/c66ce47c-56c3-4a9a-873d-f73b9f242a56_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMRightKidney",
+              "placement_date": "2021-10-31",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -33,
+              "y_rotation": -32,
+              "z_rotation": 97,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 13.155,
+              "y_translation": 18.053,
+              "z_translation": 47.177,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM783.GDKK.879#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM783.GDKK.879",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM389.MBWW.346#Donor",
+      "@type": "Donor",
+      "label": "Male, Age 53",
+      "description": "Entered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM389.MBWW.346",
+      "age": 53,
+      "sex": "Male",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM389.MBWW.346#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM389.MBWW.346",
+          "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/76cb2f1b-83df-445f-8a3f-7e312fb2c066",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-10-31",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 20,
+            "y_dimension": 8,
+            "z_dimension": 4,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/76cb2f1b-83df-445f-8a3f-7e312fb2c066_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney",
+              "placement_date": "2021-10-31",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -36,
+              "y_rotation": 32,
+              "z_rotation": 63,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 59.119,
+              "y_translation": 51.239,
+              "z_translation": 58.555,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM389.MBWW.346#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM389.MBWW.346",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM879.CDHB.995#Donor",
+      "@type": "Donor",
+      "label": "Male, Age 53",
+      "description": "Entered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM879.CDHB.995",
+      "age": 53,
+      "sex": "Male",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM879.CDHB.995#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM879.CDHB.995",
+          "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/41870ca9-04f6-417a-9e0b-033d24685c88",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-10-31",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 20,
+            "y_dimension": 8,
+            "z_dimension": 4,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/41870ca9-04f6-417a-9e0b-033d24685c88_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney",
+              "placement_date": "2021-10-31",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -35,
+              "y_rotation": 34,
+              "z_rotation": 91,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 60.445,
+              "y_translation": 57.832,
+              "z_translation": 53.555,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM879.CDHB.995#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM879.CDHB.995",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM662.PMPZ.644#Donor",
+      "@type": "Donor",
+      "label": "Male, Age 56",
+      "description": "Entered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM662.PMPZ.644",
+      "age": 56,
+      "sex": "Male",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM662.PMPZ.644#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM662.PMPZ.644",
+          "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/3201da36-6f3f-449b-841b-e27959f594b2",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-10-31",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0008716",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0001228",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0006517",
+              "http://purl.obolibrary.org/obo/UBERON_0001227",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 35,
+            "y_dimension": 19,
+            "z_dimension": 3,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/3201da36-6f3f-449b-841b-e27959f594b2_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHMLeftKidney",
+              "placement_date": "2021-10-31",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -38,
+              "y_rotation": 29,
+              "z_rotation": 43,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 54.682,
+              "y_translation": 56.863,
+              "z_translation": 65.055,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM662.PMPZ.644#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM662.PMPZ.644",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM874.RZDW.757#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 44",
+      "description": "Entered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM874.RZDW.757",
+      "age": 44,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM874.RZDW.757#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM874.RZDW.757",
+          "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/45a571bb-e774-4b42-a6e1-5d48494c21d8",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-10-31",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004539"
+            ],
+            "x_dimension": 17,
+            "y_dimension": 18,
+            "z_dimension": 3,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/45a571bb-e774-4b42-a6e1-5d48494c21d8_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFRightKidney",
+              "placement_date": "2021-10-31",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -47,
+              "y_rotation": -24,
+              "z_rotation": -38,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 18.519,
+              "y_translation": 11.075,
+              "z_translation": 59.989,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM874.RZDW.757#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM874.RZDW.757",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM849.XMPC.398#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 61",
+      "description": "Entered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM849.XMPC.398",
+      "age": 61,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM849.XMPC.398#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM849.XMPC.398",
+          "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/9f5fff84-2961-4f01-a572-c8eaf8663628",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-10-31",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 19,
+            "y_dimension": 15,
+            "z_dimension": 3,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/9f5fff84-2961-4f01-a572-c8eaf8663628_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFLeftKidney",
+              "placement_date": "2021-10-31",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -36,
+              "y_rotation": 34,
+              "z_rotation": -30,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 41.015,
+              "y_translation": 10.809,
+              "z_translation": 69.782,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM849.XMPC.398#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM849.XMPC.398",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://portal.hubmapconsortium.org/browse/HBM979.HDZH.896#Donor",
+      "@type": "Donor",
+      "label": "Female, Age 76",
+      "description": "Entered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+      "link": "https://portal.hubmapconsortium.org/browse/HBM979.HDZH.896",
+      "age": 76,
+      "sex": "Female",
+      "consortium_name": "HuBMAP",
+      "provider_name": "TMC-Vanderbilt",
+      "provider_uuid": "73bb26e4-ed43-11e8-8f19-0a7c1eab007a",
+      "samples": [
+        {
+          "@id": "https://portal.hubmapconsortium.org/browse/HBM979.HDZH.896#Sample",
+          "@type": "Sample",
+          "sample_type": "Tissue Block",
+          "link": "https://portal.hubmapconsortium.org/browse/HBM979.HDZH.896",
+          "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+          "description": "No description",
+          "section_count": 1,
+          "section_size": 0,
+          "section_units": "millimeter",
+          "rui_location": {
+            "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+            "@id": "http://purl.org/ccf/1.5/096c5673-103f-4ebc-be84-a60826e5b148",
+            "@type": "SpatialEntity",
+            "creator": "Jeff Spraggins",
+            "creator_first_name": "Jeff",
+            "creator_last_name": "Spraggins",
+            "creation_date": "2021-10-31",
+            "ccf_annotations": [
+              "http://purl.obolibrary.org/obo/UBERON_0002015",
+              "http://purl.obolibrary.org/obo/UBERON_0000362",
+              "http://purl.obolibrary.org/obo/UBERON_0004200",
+              "http://purl.obolibrary.org/obo/UBERON_0001225",
+              "http://purl.obolibrary.org/obo/UBERON_0001284",
+              "http://purl.obolibrary.org/obo/UBERON_0002189",
+              "http://purl.obolibrary.org/obo/UBERON_0013702",
+              "http://purl.obolibrary.org/obo/UBERON_0002113",
+              "http://purl.obolibrary.org/obo/UBERON_0004538"
+            ],
+            "x_dimension": 20,
+            "y_dimension": 14,
+            "z_dimension": 5,
+            "dimension_units": "millimeter",
+            "placement": {
+              "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+              "@id": "http://purl.org/ccf/1.5/096c5673-103f-4ebc-be84-a60826e5b148_placement",
+              "@type": "SpatialPlacement",
+              "target": "http://purl.org/ccf/latest/ccf.owl#VHFLeftKidney",
+              "placement_date": "2021-10-31",
+              "x_scaling": 1,
+              "y_scaling": 1,
+              "z_scaling": 1,
+              "scaling_units": "ratio",
+              "x_rotation": -39,
+              "y_rotation": 40,
+              "z_rotation": 99,
+              "rotation_order": "XYZ",
+              "rotation_units": "degree",
+              "x_translation": 63.928,
+              "y_translation": 18.716,
+              "z_translation": 48.282,
+              "translation_units": "millimeter"
+            }
+          },
+          "sections": [],
+          "datasets": [
+            {
+              "@id": "https://portal.hubmapconsortium.org/browse/HBM979.HDZH.896#Dataset",
+              "@type": "Dataset",
+              "label": "Registered 2021-10-31, Jeff Spraggins, TMC-Vanderbilt",
+              "description": "Data/Assay Types: PAS",
+              "link": "https://portal.hubmapconsortium.org/browse/HBM979.HDZH.896",
+              "technology": "PAS",
+              "thumbnail": "assets/icons/ico-unknown.svg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
