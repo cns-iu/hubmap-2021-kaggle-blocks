@@ -93,7 +93,7 @@ ________________
 UUID: VAN0006-LK-4-33   VAN0006-LK-4-33_HBM984.PMZN.942
 Patient #: 68555
 Internal #: 110
-A, S, R: 76, F, W
+A, S, R: 58, M, B
 Laterality: Left
 (Right, Left)
 Anatomical Location: Upper
